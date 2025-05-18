@@ -1,0 +1,30 @@
+body { 
+    margin: 0; 
+    overflow: hidden;
+    background-color: #111;
+}
+
+svg { 
+    width: 100vw; 
+    height: 100vh; 
+}
+    
+.link {
+    stroke: #999;
+    stroke-opacity: 0.6;
+    stroke-width: 3px;
+}
+    
+.node {}
+
+.node rect {}
+
+.node text {
+    font-family: sans-serif;
+    pointer-events: none;
+    dominant-baseline: middle
+}
+
+.node image {
+    pointer-events: none;
+}
