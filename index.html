@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Force-Directed Graph mit D3.js</title>
+  <title>mindmap portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -13,125 +13,118 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
 
   <script>
-    // Beispiel-Daten
-    const nodes = [
-      { id: 'A', title: 'Node A', color: '#ff8c00', thumbnail: 'img/test.png' },
-      { id: 'B', title: 'Node B', color: '#ff6347', thumbnail: 'img/test.png' },
-      { id: 'C', title: 'Node C', color: '#4682b4', thumbnail: 'img/test.png' },
-      { id: 'D', title: 'Node D', color: '#32cd32', thumbnail: 'img/test.png' }
-    ];
-    const links = [
-      { source: 'A', target: 'B' },
-      { source: 'A', target: 'C' },
-      { source: 'B', target: 'D' },
-      { source: 'C', target: 'D' }
-    ];
+    // Daten aus JSON laden
+    fetch('nodes.json')
+      .then(response => response.json())
+      .then(data => {
+        const nodes = data.nodes;
+        const links = [];
+        nodes.forEach(node => {
+          Object.values(node.links).forEach(targetId => {
+            links.push({ source: node.id, target: targetId });
+          });
+        });
 
-    // SVG und Gruppen
-    const svg = d3.select('body').append('svg')
-      .attr('width', window.innerWidth)
-      .attr('height', window.innerHeight);
-    const container = svg.append('g');
+        const svg = d3.select('body').append('svg')
+          .attr('width', window.innerWidth)
+          .attr('height', window.innerHeight);
+        const container = svg.append('g');
 
-    // Zoom- und Pan-Verhalten
-    const zoom = d3.zoom()
-      .scaleExtent([0.1, 10])
-      .on('zoom', ({ transform }) => {
-        container.attr('transform', transform);
-      });
-    svg.call(zoom);
+        const zoom = d3.zoom()
+          .scaleExtent([0.1, 10])
+          .on('zoom', ({ transform }) => container.attr('transform', transform));
+        svg.call(zoom);
 
-    // Simulation
-    const simulation = d3.forceSimulation(nodes)
-      .force('link', d3.forceLink(links).id(d => d.id).distance(400))
-      .force('charge', d3.forceManyBody().strength(-500))
-      .force('center', d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2));
+        const simulation = d3.forceSimulation(nodes)
+          .force('link', d3.forceLink(links).id(d => d.id).distance(400))
+          .force('charge', d3.forceManyBody().strength(-400))
+          .force('center', d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2));
 
-    // Links zeichnen
-    const link = container.append('g')
-      .attr('class', 'links')
-      .selectAll('line')
-      .data(links)
-      .enter().append('line')
-      .attr('class', 'link');
+        const link = container.append('g')
+          .attr('class', 'links')
+          .selectAll('line')
+          .data(links)
+          .enter().append('line')
+          .attr('class', 'link');
 
-    // Nodes zeichnen
-    const node = container.append('g')
-      .attr('class', 'nodes')
-      .selectAll('g')
-      .data(nodes)
-      .enter().append('g')
-      .attr('class', 'node')
-      .call(d3.drag()
-        .on('start', dragstarted)
-        .on('drag', dragged)
-        .on('end', dragended)
-      );
+        const nodeGroup = container.append('g')
+          .attr('class', 'nodes')
+          .selectAll('g')
+          .data(nodes)
+          .enter().append('g')
+          .attr('class', 'node')
+          .call(d3.drag()
+            .on('start', dragstarted)
+            .on('drag', dragged)
+            .on('end', dragended)
+          );
 
-    const nodeWidth = 128;
-    const nodeHeight = 160;
-    const titleHeight = 37;
-    const thumbSize = 118;
+        // Größe und Layout basierend auf size-Attribut
+        const padding = 8;
+        const titleHeight = 32;
+        const thumbSize = d => d.size;
+        // Gesamtbreite = Thumbnail plus seitlicher Padding
+        const nodeWidth = d => thumbSize(d) + padding * 2;
+        // Gesamthöhe = Titelbereich + Thumbnail + oberer/unterer Padding
+        const nodeHeight = d => titleHeight + thumbSize(d) + padding * 2;
 
-    node.append('rect')
-      .attr('x', -nodeWidth / 2)
-      .attr('y', -nodeHeight / 2)
-      .attr('width', nodeWidth)
-      .attr('height', nodeHeight)
-      .attr('fill', d => d.color);
+        nodeGroup.append('rect')
+          .attr('x', d => -nodeWidth(d) / 2)
+          .attr('y', d => -nodeHeight(d) / 2)
+          .attr('width', d => nodeWidth(d))
+          .attr('height', d => nodeHeight(d))
+          .attr('fill', d => d.color);
 
-    node.append('text')
-      .attr('x', 0)
-      .attr('y', -nodeHeight / 2 + titleHeight / 2)
-      .attr('text-anchor', 'middle')
-      .attr('font-size', '12px')
-      .attr('fill', '#fff')
-      .text(d => d.title);
+        nodeGroup.append('text')
+          .attr('x', 0)
+          .attr('y', d => -nodeHeight(d) / 2 + titleHeight / 2 + padding / 2)
+          .attr('text-anchor', 'middle')
+          .attr('dominant-baseline', 'middle')
+          .attr('font-size', '12px')
+          .attr('fill', '#fff')
+          .text(d => d.title);
 
-    node.append('image')
-      .attr('xlink:href', d => d.thumbnail)
-      .attr('x', -thumbSize / 2)
-      .attr('y', -nodeHeight / 2 + titleHeight)
-      .attr('width', thumbSize)
-      .attr('height', thumbSize);
+        nodeGroup.append('image')
+          .attr('href', d => d.thumbnail)
+          .attr('x', d => -thumbSize(d) / 2)
+          .attr('y', d => -nodeHeight(d) / 2 + titleHeight + padding)
+          .attr('width', d => thumbSize(d))
+          .attr('height', d => thumbSize(d));
 
-    // Simulation Tick-Handler (g-Elemente per transform verschieben)
-    simulation.on('tick', () => {
-      link
-        .attr('x1', d => d.source.x)
-        .attr('y1', d => d.source.y)
-        .attr('x2', d => d.target.x)
-        .attr('y2', d => d.target.y);
+        simulation.on('tick', () => {
+          link
+            .attr('x1', d => d.source.x)
+            .attr('y1', d => d.source.y)
+            .attr('x2', d => d.target.x)
+            .attr('y2', d => d.target.y);
 
-      node
-        .attr('transform', d => `translate(${d.x},${d.y})`);
-    });
+          nodeGroup.attr('transform', d => `translate(${d.x},${d.y})`);
+        });
 
-    // Drag-Event-Handler
-    function dragstarted(event, d) {
-      if (!event.active) simulation.alphaTarget(0.3).restart();
-      d.fx = d.x;
-      d.fy = d.y;
-    }
+        function dragstarted(event, d) {
+          if (!event.active) simulation.alphaTarget(0.3).restart();
+          d.fx = d.x;
+          d.fy = d.y;
+        }
 
-    function dragged(event, d) {
-      d.fx = event.x;
-      d.fy = event.y;
-    }
+        function dragged(event, d) {
+          d.fx = event.x;
+          d.fy = event.y;
+        }
 
-    function dragended(event, d) {
-      if (!event.active) simulation.alphaTarget(0);
-      d.fx = null;
-      d.fy = null;
-    }
+        function dragended(event, d) {
+          if (!event.active) simulation.alphaTarget(0);
+          d.fx = null;
+          d.fy = null;
+        }
 
-    // Fenster-Resize
-    window.addEventListener('resize', () => {
-      svg.attr('width', window.innerWidth).attr('height', window.innerHeight);
-      simulation.force('center', d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2));
-      simulation.alpha(0.5).restart();
-    });
-
+        window.addEventListener('resize', () => {
+          svg.attr('width', window.innerWidth).attr('height', window.innerHeight);
+          simulation.force('center', d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2));
+          simulation.alpha(0.5).restart();
+        });
+      })
+      .catch(error => console.error('Fehler beim Laden der Daten:', error));
   </script>
 </body>
 

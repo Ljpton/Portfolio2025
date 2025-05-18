@@ -10,8 +10,7 @@ svg {
 }
     
 .link {
-    stroke: #999;
-    stroke-opacity: 0.6;
+    stroke: #444;
     stroke-width: 3px;
 }
     
@@ -21,6 +20,7 @@ svg {
 
 .node text {
     font-family: sans-serif;
+    font-size: 18px;
     pointer-events: none;
     dominant-baseline: middle
 }

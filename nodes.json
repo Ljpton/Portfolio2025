@@ -2,26 +2,45 @@
     "nodes": [  
         {
             "id": "1",
-            "title": "leon unger",
+            "title": "fernofai",
             "thumbnail": "img/test.png",
-            "width": 160,
-            "height": 128,
-            "color": "#FF5733",
+            "size": 120,
+            "color": "#2a9",
             "logline": "gamedev, musician, artist",
-            "connections": {
-                "connection1": "1",
-                "connection2": "2",
-                "connection3": "3"
+            "links": {
             }
         },
         {
             "id": "2",
-            "name": "Node 2",
-            "type": "Type B",
-            "description": "This is the second node.",
-            "properties": {
-                "property1": "value3",
-                "property2": "value4"
+            "title": "games",
+            "thumbnail": "img/test.png",
+            "size": 100,
+            "color": "#a33",
+            "logline": "gamedev, musician, artist",
+            "links": {
+                "link1": "1"
+            }
+        },
+        {
+            "id": "3",
+            "title": "music",
+            "thumbnail": "img/test.png",
+            "size": 100,
+            "color": "#4a4",
+            "logline": "gamedev, musician, artist",
+            "links": {
+                "link1": "1"
+            }
+        },
+        {
+            "id": "4",
+            "title": "art",
+            "thumbnail": "img/test.png",
+            "size": 100,
+            "color": "#a93",
+            "logline": "gamedev, musician, artist",
+            "links": {
+                "link1": "1"
             }
         }
     ]
