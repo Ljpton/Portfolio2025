@@ -7,6 +7,7 @@
             "size": 120,
             "color": "#2a9",
             "logline": "gamedev, musician, artist",
+            "text": "fernofai is a game development studio that focuses on creating unique and engaging experiences. we are passionate about pushing the boundaries of what games can be and exploring new ways to tell stories through interactive media.",
             "links": {
             }
         },
@@ -16,7 +17,8 @@
             "thumbnail": "img/test.png",
             "size": 100,
             "color": "#a33",
-            "logline": "gamedev, musician, artist",
+            "logline": "'cheesy quote about my relationship to games and game design'",
+            "text": "i began developing games in in elementary school, using pearler beads, a pair of dice and a world map. growing up i spent a lot of time in programs like scratch to create various games and ended up studying computer science and game development.",
             "links": {
                 "link1": "1"
             }
@@ -28,6 +30,7 @@
             "size": 100,
             "color": "#4a4",
             "logline": "gamedev, musician, artist",
+            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "links": {
                 "link1": "1"
             }
@@ -39,6 +42,7 @@
             "size": 100,
             "color": "#a93",
             "logline": "gamedev, musician, artist",
+            "text": "hi",
             "links": {
                 "link1": "1"
             }

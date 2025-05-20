@@ -9,10 +9,73 @@
 </head>
 
 <body>
+  <!-- Overlay für Node-Details -->
+  <div id="overlay">
+    <div class="content">
+      <div class="title-bar">
+        <div id="overlay-title"></div>
+        <span class="close-btn">✖</span>
+      </div>
+      <div class="scroll-area">  
+        <div id="overlay-logline"></div>
+        <p id="overlay-text"></p>
+        <img id="overlay-thumb" src="" alt="thumbnail"/>
+      </div>
+    </div>
+  </div>
+
   <!-- D3.js laden -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
 
   <script>
+    // Overlay-Elemente
+    const overlay = d3.select('#overlay');
+    const titleEl = d3.select('#overlay-title');
+    const loglineEl = d3.select('#overlay-logline');
+    const textEl = d3.select('#overlay-text');
+    const thumbEl = d3.select('#overlay-thumb');
+    const closeBtn = d3.select('#overlay .close-btn');
+    const contentEl = d3.select('#overlay .content');
+
+    closeBtn.on('click', () => hideOverlay());
+    overlay.on('click', (event) => {
+      if (event.target.id === 'overlay') hideOverlay();
+    });
+
+    function showOverlay(d) {
+      titleEl.text(d.title);
+      loglineEl.text(d.logline || '');
+      textEl.text(d.text || '');
+      thumbEl.attr('src', d.thumbnail);
+      overlay.style('display', 'block');
+      contentEl.style('border-color', d.color);
+    }
+    function hideOverlay() {
+      overlay.style('display', 'none');
+      // Auswahl zurücksetzen
+      container.selectAll('.node').classed('selected', false);
+    }
+
+    const svg = d3.select('body').append('svg')
+      .attr('width', window.innerWidth)
+      .attr('height', window.innerHeight);
+          
+    const container = svg.append('g');
+
+    // Klick auf Hintergrund -> Deselektieren
+    svg.on('click', () => hideOverlay());
+    container.on('click', (event) => {
+      // Verhindern, dass Klicks auf Nodes hier landen (stopPropagation in Node-Handler)
+      if (event.target.tagName === 'svg') {
+        hideOverlay();
+      }
+    });
+
+    const zoom = d3.zoom()
+      .scaleExtent([0.1, 10])
+      .on('zoom', ({ transform }) => container.attr('transform', transform));
+    svg.call(zoom);
+    
     // Daten aus JSON laden
     fetch('nodes.json')
       .then(response => response.json())
@@ -24,16 +87,6 @@
             links.push({ source: node.id, target: targetId });
           });
         });
-
-        const svg = d3.select('body').append('svg')
-          .attr('width', window.innerWidth)
-          .attr('height', window.innerHeight);
-        const container = svg.append('g');
-
-        const zoom = d3.zoom()
-          .scaleExtent([0.1, 10])
-          .on('zoom', ({ transform }) => container.attr('transform', transform));
-        svg.call(zoom);
 
         const simulation = d3.forceSimulation(nodes)
           .force('link', d3.forceLink(links).id(d => d.id).distance(400))
@@ -53,6 +106,18 @@
           .data(nodes)
           .enter().append('g')
           .attr('class', 'node')
+          .on('click', (event, d) => {
+            event.stopPropagation();
+            const isSelected = d3.select(event.currentTarget).classed('selected');
+            container.selectAll('.node').classed('selected', false); /* deselect all */
+            if (!isSelected) {
+              d3.select(event.currentTarget).classed('selected', true);
+              showOverlay(d);
+            }
+            else {
+              hideOverlay();
+            }
+          })
           .call(d3.drag()
             .on('start', dragstarted)
             .on('drag', dragged)
