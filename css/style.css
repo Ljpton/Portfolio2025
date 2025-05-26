@@ -93,3 +93,14 @@ svg {
     stroke: #fff;
     stroke-width: 3px;
 }
+
+.inline-image {
+    width: 66%;
+}
+
+.inline-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}

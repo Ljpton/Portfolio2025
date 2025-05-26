@@ -19,7 +19,6 @@
       <div class="scroll-area">  
         <div id="overlay-logline"></div>
         <p id="overlay-text"></p>
-        <img id="overlay-thumb" src="" alt="thumbnail"/>
       </div>
     </div>
   </div>
@@ -33,9 +32,12 @@
     const titleEl = d3.select('#overlay-title');
     const loglineEl = d3.select('#overlay-logline');
     const textEl = d3.select('#overlay-text');
-    const thumbEl = d3.select('#overlay-thumb');
     const closeBtn = d3.select('#overlay .close-btn');
     const contentEl = d3.select('#overlay .content');
+
+    function parseRichText(text) {
+      return text.replace(/\[\[img:(.*?)\]\]/g, '<div class="inline-image-container"><img class="inline-image" src="$1"/></div>');
+    }
 
     closeBtn.on('click', () => hideOverlay());
     overlay.on('click', (event) => {
@@ -45,8 +47,7 @@
     function showOverlay(d) {
       titleEl.text(d.title);
       loglineEl.text(d.logline || '');
-      textEl.text(d.text || '');
-      thumbEl.attr('src', d.thumbnail);
+      textEl.html(parseRichText(d.text) || '');
       overlay.style('display', 'block');
       contentEl.style('border-color', d.color);
     }
@@ -155,6 +156,10 @@
           .attr('y', d => -nodeHeight(d) / 2 + titleHeight + padding)
           .attr('width', d => thumbSize(d))
           .attr('height', d => thumbSize(d));
+
+        nodeGroup.append('c')
+          .attr('class', 'linkContainer')
+          // for each link in nodes.json append clickable image that opens link page
 
         simulation.on('tick', () => {
           link
