@@ -23,7 +23,7 @@
   </div>
   <div id="footer">
     <div>
-      <div style="width: 143px;">fernofai's portfolio</div>
+      <div style="width: 115px;">Leon's portfolio</div>
       <div id="social-media">
         <a href="https://github.com/Ljpton"><img src="img/github_logo.png" alt="github"></a>
         <a href="https://bsky.app/profile/fernofai.bsky.social"><img src="img/bluesky_logo.png" alt="bluesky"></a>
@@ -52,7 +52,12 @@
       // GIFs (wie Bilder behandelt)
       .replace(/\[\[gif:(.*?)\]\]/g, '<div class="inline-content-container"><img class="inline-content" src="$1" alt="GIF"/></div>')
       // YouTube-Videos (Einbettung per iframe)
-      .replace(/\[\[yt:(.*?)\]\]/g, '<div class="inline-content-container"><iframe class="inline-content" src="https://www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe></div>');
+      .replace(/\[\[yt:(.*?)\]\]/g, '<div class="inline-content-container"><iframe class="inline-content" src="https://www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe></div>')
+      
+      .replace(/\[\[link:(.*?)(?:\|(.*?))?\]\]/g, (match, url, text) => {
+        const linkText = text || url;
+        return `<a href="${url}" class="inline-link" target="_blank" rel="noopener noreferrer">${linkText}</a>`;
+      });
     }
     
     closeBtn.on('click', () => hideOverlay());
@@ -164,7 +169,13 @@
           .attr('dominant-baseline', 'middle')
           .attr('font-size', '12px')
           .attr('fill', '#fff')
-          .text(d => d.title);
+          .attr('width', d => nodeWidth(d) - padding * 2)
+          .text(d => d.title)
+          .each(function(d) { // Truncate long titles
+            if(d.title.length > 10) {
+              d3.select(this).text(d.title.substring(0, 9) + '…');
+            }
+          });
 
         nodeGroup.append('image')
           .attr('href', d => d.thumbnail)

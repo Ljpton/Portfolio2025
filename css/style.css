@@ -22,7 +22,13 @@ svg {
 .node text {
     font-size: 18px;
     pointer-events: none;
-    dominant-baseline: middle
+    dominant-baseline: middle;
+}
+
+.node-title {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .node image {
