@@ -94,13 +94,49 @@ svg {
     stroke-width: 3px;
 }
 
-.inline-image {
+.inline-content {
     width: 66%;
 }
 
-.inline-image-container {
+.inline-content-container {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 20px 0;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 40px);
+    margin: 0 20px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+#social-media img {
+    margin: 10px 0;
+    width: 30px;
+    height: 30px;  
+}
+
+#social-media img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.wrapper {
+    margin: 20px;
 }

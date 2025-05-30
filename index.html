@@ -9,7 +9,6 @@
 </head>
 
 <body>
-  <!-- Overlay für Node-Details -->
   <div id="overlay">
     <div class="content">
       <div class="title-bar">
@@ -21,6 +20,17 @@
         <p id="overlay-text"></p>
       </div>
     </div>
+  </div>
+  <div id="footer">
+    <div>
+      <div style="width: 143px;">fernofai's portfolio</div>
+      <div id="social-media">
+        <a href="https://github.com/Ljpton"><img src="img/github_logo.png" alt="github"></a>
+        <a href="https://bsky.app/profile/fernofai.bsky.social"><img src="img/bluesky_logo.png" alt="bluesky"></a>
+        <a href="https://www.linkedin.com/in/leon-unger-6a4137269/"><img src="img/linkedin_logo.png" alt="linkedin"></a>
+      </div>
+    </div>
+    <a href="legal.html">legal notice</a>
   </div>
 
   <!-- D3.js laden -->
@@ -36,9 +46,15 @@
     const contentEl = d3.select('#overlay .content');
 
     function parseRichText(text) {
-      return text.replace(/\[\[img:(.*?)\]\]/g, '<div class="inline-image-container"><img class="inline-image" src="$1"/></div>');
+      return text
+      // Bilder
+      .replace(/\[\[img:(.*?)\]\]/g, '<div class="inline-content-container"><img class="inline-content" src="$1"/></div>')
+      // GIFs (wie Bilder behandelt)
+      .replace(/\[\[gif:(.*?)\]\]/g, '<div class="inline-content-container"><img class="inline-content" src="$1" alt="GIF"/></div>')
+      // YouTube-Videos (Einbettung per iframe)
+      .replace(/\[\[yt:(.*?)\]\]/g, '<div class="inline-content-container"><iframe class="inline-content" src="https://www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe></div>');
     }
-
+    
     closeBtn.on('click', () => hideOverlay());
     overlay.on('click', (event) => {
       if (event.target.id === 'overlay') hideOverlay();
