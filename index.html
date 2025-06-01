@@ -106,18 +106,14 @@
         const links = [];
         nodes.forEach(node => {
           Object.values(node.links).forEach(targetId => {
-            links.push({ source: node.id, target: targetId });
+            links.push({ source: node.id.toString(), target: targetId.toString() });
           });
         });
 
-        const simulation = d3.forceSimulation(nodes)
-          .force('link', d3.forceLink(links).id(d => d.id).distance(500))
-          .force('charge', d3.forceManyBody().strength(-1000))
-          //.force('center', d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2));
-
-        simulation
-          .force('x', d3.forceX(d => d.id === "1" ? window.innerWidth / 2 : null).strength(d => d.id === "1" ? 1 : 0))
-          .force('y', d3.forceY(d => d.id === "1" ? window.innerHeight / 2 : null).strength(d => d.id === "1" ? 1 : 0));
+        /*const simulation = d3.forceSimulation(nodes)
+          .force('link', d3.forceLink(links).id(d => d.id).strength(0))
+          .force('charge', d3.forceManyBody().strength(-30))
+          .force('center', d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2));*/
 
         const link = container.append('g')
           .attr('class', 'links')
@@ -188,11 +184,16 @@
           .attr('width', d => thumbSize(d))
           .attr('height', d => thumbSize(d));
 
-        nodeGroup.append('c')
-          .attr('class', 'linkContainer')
-          // for each link in nodes.json append clickable image that opens link page
+        nodes.forEach((d) => {
+          d.x = window.innerWidth / 2 + d.xoffset;
+          d.y = window.innerHeight / 2 + d.yoffset;
+        });
 
-        simulation.on('tick', () => {
+        /*simulation.on('tick', () => {
+          console.log("Beispiel-Link:", links[0]);
+          console.log("source:", links[0].source);
+          console.log("target:", links[0].target);
+          
           link
             .attr('x1', d => d.source.x)
             .attr('y1', d => d.source.y)
@@ -200,10 +201,10 @@
             .attr('y2', d => d.target.y);
 
           nodeGroup.attr('transform', d => `translate(${d.x},${d.y})`);
-        });
+        });*/
 
         function dragstarted(event, d) {
-          if (!event.active) simulation.alphaTarget(0.3).restart();
+          //if (!event.active) simulation.alphaTarget(0.3).restart();
           d.fx = d.x;
           d.fy = d.y;
         }
@@ -214,15 +215,15 @@
         }
 
         function dragended(event, d) {
-          if (!event.active) simulation.alphaTarget(0);
+          //if (!event.active) simulation.alphaTarget(0);
           d.fx = null;
           d.fy = null;
         }
 
         window.addEventListener('resize', () => {
           svg.attr('width', window.innerWidth).attr('height', window.innerHeight);
-          simulation.force('center', d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2));
-          simulation.alpha(0.5).restart();
+          //simulation.force('center', d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2));
+          //simulation.alpha(0.5).restart();
         });
       })
       .catch(error => console.error('Fehler beim Laden der Daten:', error));

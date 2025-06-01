@@ -9,7 +9,9 @@
             "logline": "gamedev, musician, artist",
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. [[img:img/test.png]] Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "links": {
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "2",
@@ -21,7 +23,9 @@
             "text": "i began developing games in in elementary school, using pearler beads, a pair of dice and a world map. growing up i spent a lot of time in programs like scratch to create various games and ended up studying computer science and game development.",
             "links": {
                 "link1": "1"
-            }
+            },
+            "xoffset": "300",
+            "yoffset": "300"
         },
         {
             "id": "3",
@@ -33,7 +37,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "1"
-            }
+            },
+            "xoffset": "-100",
+            "yoffset": "500"
         },
         {
             "id": "4",
@@ -45,7 +51,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "1"
-            }
+            },
+            "xoffset": "-400",
+            "yoffset": "200"
         },
         {
             "id": "5",
@@ -57,7 +65,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "2"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "6",
@@ -69,7 +79,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "2"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "7",
@@ -81,7 +93,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "2"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "8",
@@ -94,7 +108,9 @@
             "links": {
                 "link1": "2",
                 "link2": "4"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "9",
@@ -106,7 +122,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "2"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "10",
@@ -118,7 +136,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "2"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "11",
@@ -132,7 +152,9 @@
                 "link1": "2",
                 "link2": "3",
                 "link3": "4"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "12",
@@ -144,7 +166,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "3"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "13",
@@ -156,7 +180,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "3"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "14",
@@ -169,7 +195,9 @@
             "links": {
                 "link1": "3",
                 "link2": "7"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "15",
@@ -182,7 +210,9 @@
             "links": {
                 "link1": "3",
                 "link2": "10"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "16",
@@ -194,7 +224,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "3"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "17",
@@ -206,7 +238,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "3"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "18",
@@ -218,7 +252,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "3"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "19",
@@ -230,7 +266,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "3"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "20",
@@ -242,7 +280,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "3"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "21",
@@ -254,7 +294,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "4"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "22",
@@ -266,7 +308,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "4"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "23",
@@ -278,7 +322,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "4"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "24",
@@ -290,7 +336,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "4"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "25",
@@ -302,7 +350,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "4"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         },
         {
             "id": "26",
@@ -314,7 +364,9 @@
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "4"
-            }
+            },
+            "xoffset": "0",
+            "yoffset": "0"
         }
     ]
 }
