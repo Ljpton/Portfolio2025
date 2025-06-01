@@ -110,33 +110,45 @@
           });
         });
 
-        /*const simulation = d3.forceSimulation(nodes)
-          .force('link', d3.forceLink(links).id(d => d.id).strength(0))
-          .force('charge', d3.forceManyBody().strength(-30))
-          .force('center', d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2));*/
+        // Map von id→Node-Objekt
+        const nodeById = new Map(nodes.map(d => [d.id.toString(), d]));
+        const linksResolved = links.map(l => ({
+          source: nodeById.get(l.source),
+          target: nodeById.get(l.target)
+        }));
 
-        const link = container.append('g')
+        // Anfangspositionen: nutzen xoffset/yoffset oder Mitte
+        nodes.forEach(d => {
+          d.x = window.innerWidth / 2 + ((d.xoffset !== undefined) ? +d.xoffset : 0);
+          d.y = window.innerHeight / 2 + ((d.yoffset !== undefined) ? +d.yoffset : 0);
+        });
+
+        // Links zeichnen
+        const linkSel = container.append('g')
           .attr('class', 'links')
           .selectAll('line')
-          .data(links)
+          .data(linksResolved)
           .enter().append('line')
-          .attr('class', 'link');
+          .attr('class', 'link')
+          .attr('stroke', '#999')
+          .attr('stroke-width', 1.2);
 
+        // Nodes zeichnen
         const nodeGroup = container.append('g')
           .attr('class', 'nodes')
           .selectAll('g')
           .data(nodes)
           .enter().append('g')
           .attr('class', 'node')
+          .attr('transform', d => `translate(${+d.x},${+d.y})`)
           .on('click', (event, d) => {
             event.stopPropagation();
             const isSelected = d3.select(event.currentTarget).classed('selected');
-            container.selectAll('.node').classed('selected', false); /* deselect all */
+            container.selectAll('.node').classed('selected', false);
             if (!isSelected) {
               d3.select(event.currentTarget).classed('selected', true);
               showOverlay(d);
-            }
-            else {
+            } else {
               hideOverlay();
             }
           })
@@ -149,7 +161,7 @@
         // Größe und Layout basierend auf size-Attribut
         const padding = 8;
         const titleHeight = 32;
-        const thumbSize = d => d.size;
+        const thumbSize = d => +d.size;
         // Gesamtbreite = Thumbnail plus seitlicher Padding
         const nodeWidth = d => thumbSize(d) + padding * 2;
         // Gesamthöhe = Titelbereich + Thumbnail + oberer/unterer Padding
@@ -169,11 +181,14 @@
           .attr('dominant-baseline', 'middle')
           .attr('font-size', '12px')
           .attr('fill', '#fff')
-          .attr('width', d => nodeWidth(d) - padding * 2)
-          .text(d => d.title)
           .each(function(d) { // Truncate long titles
-            if(d.title.length > 10) {
-              d3.select(this).text(d.title.substring(0, 9) + '…');
+            const textEl = d3.select(this);
+            let txt = d.title;
+            textEl.text(txt);
+            const maxW = nodeWidth(d) - padding * 2;
+            while (this.getComputedTextLength() > maxW && txt.length > 0) {
+              txt = txt.slice(0, -1);
+              textEl.text(txt + '…');
             }
           });
 
@@ -184,46 +199,37 @@
           .attr('width', d => thumbSize(d))
           .attr('height', d => thumbSize(d));
 
-        nodes.forEach((d) => {
-          d.x = window.innerWidth / 2 + d.xoffset;
-          d.y = window.innerHeight / 2 + d.yoffset;
-        });
+        // Links einmalig initial setzen
+        updateLinks();
 
-        /*simulation.on('tick', () => {
-          console.log("Beispiel-Link:", links[0]);
-          console.log("source:", links[0].source);
-          console.log("target:", links[0].target);
-          
-          link
-            .attr('x1', d => d.source.x)
-            .attr('y1', d => d.source.y)
-            .attr('x2', d => d.target.x)
-            .attr('y2', d => d.target.y);
+        function updateLinks() {
+          linkSel
+            .attr('x1', d => +d.source.x)
+            .attr('y1', d => +d.source.y)
+            .attr('x2', d => +d.target.x)
+            .attr('y2', d => +d.target.y);
+        }
 
-          nodeGroup.attr('transform', d => `translate(${d.x},${d.y})`);
-        });*/
-
+        // Drag‐Callback ohne Simulation
         function dragstarted(event, d) {
-          //if (!event.active) simulation.alphaTarget(0.3).restart();
-          d.fx = d.x;
-          d.fy = d.y;
+          d3.select(this).raise();
         }
 
         function dragged(event, d) {
-          d.fx = event.x;
-          d.fy = event.y;
+          d.x = +event.x;
+          d.y = +event.y;
+          d3.select(this).attr('transform', `translate(${d.x},${d.y})`);
+          updateLinks();
         }
 
         function dragended(event, d) {
-          //if (!event.active) simulation.alphaTarget(0);
-          d.fx = null;
-          d.fy = null;
+          d3.select(this).select('rect').attr('stroke', '#333');
         }
 
+        // Resize: Canvas anpassen, Links neu zeichnen
         window.addEventListener('resize', () => {
           svg.attr('width', window.innerWidth).attr('height', window.innerHeight);
-          //simulation.force('center', d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2));
-          //simulation.alpha(0.5).restart();
+          updateLinks();
         });
       })
       .catch(error => console.error('Fehler beim Laden der Daten:', error));
