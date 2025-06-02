@@ -51,6 +51,10 @@ svg {
     #overlay {
         width: 100vw;
     }
+
+    iframe {
+        height: calc((100vw - 80px) * 9 / 16);
+    }
 }
 
 #overlay .title-bar {
@@ -101,13 +105,18 @@ svg {
 }
 
 .inline-content {
-    width: 66%;
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: calc((40vw - 80px) * 9 / 16)
 }
 
 .inline-content-container {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin: 20px 0;
 }
 

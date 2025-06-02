@@ -52,7 +52,7 @@
       // GIFs (wie Bilder behandelt)
       .replace(/\[\[gif:(.*?)\]\]/g, '<div class="inline-content-container"><img class="inline-content" src="$1" alt="GIF"/></div>')
       // YouTube-Videos (Einbettung per iframe)
-      .replace(/\[\[yt:(.*?)\]\]/g, '<div class="inline-content-container"><iframe class="inline-content" src="https://www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe></div>')
+      .replace(/\[\[yt:(.*?)\]\]/g, '<div class="inline-content-container"><iframe width="1600" height="900" class="inline-content" src="$1" frameborder="0" allowfullscreen></iframe></div>')
       
       .replace(/\[\[link:(.*?)(?:\|(.*?))?\]\]/g, (match, url, text) => {
         const linkText = text || url;
@@ -222,9 +222,7 @@
           updateLinks();
         }
 
-        function dragended(event, d) {
-          d3.select(this).select('rect').attr('stroke', '#333');
-        }
+        function dragended(event, d) { }
 
         // Resize: Canvas anpassen, Links neu zeichnen
         window.addEventListener('resize', () => {

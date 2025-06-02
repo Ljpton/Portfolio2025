@@ -24,8 +24,8 @@
             "links": {
                 "link1": "1"
             },
-            "xoffset": "500",
-            "yoffset": "300"
+            "xoffset": "400",
+            "yoffset": "200"
         },
         {
             "id": "3",
@@ -39,7 +39,7 @@
                 "link1": "1"
             },
             "xoffset": "0",
-            "yoffset": "-500"
+            "yoffset": "-300"
         },
         {
             "id": "4",
@@ -52,8 +52,8 @@
             "links": {
                 "link1": "1"
             },
-            "xoffset": "-400",
-            "yoffset": "400"
+            "xoffset": "-300",
+            "yoffset": "300"
         },
         {
             "id": "5",
@@ -100,17 +100,17 @@
         {
             "id": "8",
             "title": "bursting at the seams",
-            "thumbnail": "img/test.png",
+            "thumbnail": "img/bats_thumb.jpg",
             "size": 100,
             "color": "#b55",
             "logline": "GGJ'25 entry; narrative exploration game",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "text": "Explore the home of a hermit, who is obsessed with popping and piercing things. Investigate on their leftovers, live through their memories and put all the pieces together to uncover a horrible tragedy. [[img:img/bats_01.jpg]] [[img:img/bats_02.jpg]] [[yt:https://www.youtube.com/embed/5p9M8_Z1B3U]] sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
                 "link1": "2",
                 "link2": "4"
             },
             "xoffset": "100",
-            "yoffset": "400"
+            "yoffset": "300"
         },
         {
             "id": "9",
@@ -211,8 +211,8 @@
                 "link1": "3",
                 "link2": "10"
             },
-            "xoffset": "300",
-            "yoffset": "-300"
+            "xoffset": "350",
+            "yoffset": "-250"
         },
         {
             "id": "16",
