@@ -52,7 +52,7 @@
       // GIFs (wie Bilder behandelt)
       .replace(/\[\[gif:(.*?)\]\]/g, '<div class="inline-content-container"><img class="inline-content" src="$1" alt="GIF"/></div>')
       // YouTube-Videos (Einbettung per iframe)
-      .replace(/\[\[yt:(.*?)\]\]/g, '<div class="inline-content-container"><iframe width="1600" height="900" class="inline-content" src="$1" frameborder="0" allowfullscreen></iframe></div>')
+      .replace(/\[\[yt:(.*?)\]\]/g, '<div class="inline-content-container"><iframe class="inline-video" src="$1" frameborder="0" allowfullscreen></iframe></div>')
       
       .replace(/\[\[link:(.*?)(?:\|(.*?))?\]\]/g, (match, url, text) => {
         const linkText = text || url;
