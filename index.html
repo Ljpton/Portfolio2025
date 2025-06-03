@@ -202,6 +202,9 @@
         // Links einmalig initial setzen
         updateLinks();
 
+        linkSel
+          .attr('class', d => d.target.id == 1 ? 'main-link' : 'link');
+
         function updateLinks() {
           linkSel
             .attr('x1', d => +d.source.x)

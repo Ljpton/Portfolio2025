@@ -10,12 +10,17 @@ body {
 }
 
 svg { 
-    width: 100vw; 
-    height: 100vh; 
+    width: 100svw; 
+    height: 100svh; 
 }
     
 .link {
     stroke: #444;
+    stroke-width: 3px;
+}
+
+.main-link {
+    stroke: #aaa;
     stroke-width: 3px;
 }
 
@@ -40,8 +45,8 @@ svg {
     position: fixed;
     top: 0;
     right: 0;
-    width: 40vw;
-    height: 100vh;
+    width: 40svw;
+    height: 100svh;
     background: transparent;
     display: none;
     z-index: 1000;
@@ -49,17 +54,17 @@ svg {
 
 .inline-video {
     width: 100%;
-    height: calc((40vw - 85px) * 9 / 16)
+    height: calc((40svw - 85px) * 9 / 16)
 }
 
 @media screen and (max-width: 768px) {
     #overlay {
-        width: 100vw;
+        width: 100svw;
     }
 
     .inline-video {
         width: 100%;
-        height: calc((100vw - 85px) * 9 / 16);
+        height: calc((100svw - 85px) * 9 / 16);
     }
 }
 
@@ -91,6 +96,10 @@ svg {
     position: relative;
     border: 3px solid;
     border-color: #c73;
+}
+
+#overlay .content a {
+    color: #59e;
 }
 
 #overlay .scroll-area {

@@ -6,8 +6,8 @@
             "thumbnail": "img/profile_picture.jpg",
             "size": 150,
             "color": "#2a9",
-            "logline": "gamedev, musician, artist",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. [[img:img/test.png]] Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "logline": "gamedev; musician; artist",
+            "text": "hi, name's leon. i am 24 years old and currently finishing my game development master. i love being creative and developing and implementing unique ideas, whether it's a game, music or anything else. studying media & computer science before, i have learned a bunch of skills surrounding the conception and production of digital media. [[img:img/me.jpg]] i invite you to have a look at this mindmap that shows a selection of my works in different fields. you can zoom and scroll around freely and click on the nodes to learn more about specific projects. if you think i could be a fit for your project or just wanna chat, feel free to contact me via the links in the bottom left corner.",
             "links": {
             },
             "xoffset": "0",
@@ -103,8 +103,8 @@
             "thumbnail": "img/bats_thumb.jpg",
             "size": 100,
             "color": "#b55",
-            "logline": "GGJ'25 entry; narrative exploration game",
-            "text": "Explore the home of a hermit, who is obsessed with popping and piercing things. Investigate on their leftovers, live through their memories and put all the pieces together to uncover a horrible tragedy. [[img:img/bats_01.jpg]] [[img:img/bats_02.jpg]] [[yt:https://www.youtube.com/embed/5p9M8_Z1B3U]] sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "GGJ'25 entry; narrative exploration game; unity",
+            "text": "Explore the home of a hermit, who is obsessed with popping and piercing things. Investigate on their leftovers, live through their memories and put all the pieces together to uncover a horrible tragedy. [[yt:https://www.youtube.com/embed/5p9M8_Z1B3U]] i developed [[link:https://fernofai.itch.io/bursting-at-the-seams|bursting at the seams]] as a solo project for the global game jam 2025 within 48 hours. i initially wanted to make a narrative-driven game with a dark atmosphere, which was quite a struggle given the theme 'bubbles'. but i am very happy with the twisted obsession i made up of a person who has the urge to pierce or pop everything they can. through harmless things like the mandatory soap bubbles and balloons i told the story through the eyes of the hermit, turning darker and darker when they can't stop punching holes in a letter from a friend and eventually locking up named friend by barricading the door. [[img:img/bats_02.jpg]] i only wanted to let the players see the (quite foreseeable) ending when they found every other piece of the story first, so they could figure it out for themselves first. accidentally by this i created something very similar to what i was currently researching in my master thesis: games where you can only progress by understanding the story. with more time i would have implemented a mechanic that would require the players not only to find all clues but also put them in the correct chronological order - which would prove a much more comprehensive understanding of the story - before allowing them to see what the hermit has hidden under the trapdoor right in the middle of his hut.",
             "links": {
                 "link1": "2",
                 "link2": "4"
