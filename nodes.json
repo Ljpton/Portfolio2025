@@ -7,7 +7,7 @@
             "size": 150,
             "color": "#2a9",
             "logline": "gamedev; musician; artist",
-            "text": "hi, name's leon. i am 24 years old and currently finishing my game development master. i love being creative and developing and implementing unique ideas, whether it's a game, music or anything else. studying media & computer science before, i have learned a bunch of skills surrounding the conception and production of digital media. [[img:img/me.jpg]] i invite you to have a look at this mindmap that shows a selection of my works in different fields. you can zoom and scroll around freely and click on the nodes to learn more about specific projects. if you think i could be a fit for your project or just wanna chat, feel free to contact me via the links in the bottom left corner.",
+            "text": "hi, name's leon. i am 24 years old and currently finishing my game development master. i love being creative and developing and implementing unique ideas, whether it's a game, music or anything else. studying media & computer science before, i have learned a bunch of skills surrounding the conception and production of digital media. [[img:img/me.jpg]] i invite you to have a look at this mindmap that shows a selection of my works in different fields. if you think i could be a fit for your project or just wanna chat, feel free to contact me via the links in the bottom left corner. if you like it the classic way, you can also see my [[link:#resumee|resumee and cv here]].",
             "links": {
             },
             "xoffset": "0",
@@ -19,7 +19,7 @@
             "thumbnail": "img/test.png",
             "size": 120,
             "color": "#a33",
-            "logline": "'cheesy quote about my relationship to games and game design.'",
+            "logline": "",
             "text": "i began developing games in in elementary school, using pearler beads, a pair of dice and a world map. growing up i spent a lot of time in programs like scratch to create various games and ended up studying computer science and game development.",
             "links": {
                 "link1": "1"
@@ -34,7 +34,7 @@
             "size": 120,
             "color": "#4a4",
             "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "text": "coming from a musical family, i have been surrounded by music my whole life. i started playing the piano at age 6, sang in choirs and learned the drums, which i play until today. i've also started playing the guitar and bass guitar to be able to write more diverse music. i'm a big fan of progressive music using odd time signatures and complex harmonies.",
             "links": {
                 "link1": "1"
             },
@@ -48,7 +48,7 @@
             "size": 120,
             "color": "#b94",
             "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "text": "i always liked to draw and make up stories. additionally i have a (sometimes annoyingly perfectionist) aesthetic sense which i could apply in many of my projects. however, only after taking courses in applied art and visual storytelling during my studies i really started to dig into storytelling and especially graphic novels and comics.",
             "links": {
                 "link1": "1"
             },
@@ -259,11 +259,11 @@
         {
             "id": "19",
             "title": "hash maps",
-            "thumbnail": "img/test.png",
+            "thumbnail": "img/hashmaps_thumb.jpg",
             "size": 100,
             "color": "#6b6",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "synth wave; sound design; cubase",
+            "text": "[[yt:https://www.youtube.com/embed/oGMvWmV4Jsg]] hash maps is a synth wave track i made within about 5 hours. it's based of a hilarious voice message i received from a friend nerding about hash maps and how they are the best data structure ever.",
             "links": {
                 "link1": "3"
             },
@@ -342,12 +342,12 @@
         },
         {
             "id": "25",
-            "title": "chess room",
-            "thumbnail": "img/test.png",
+            "title": "chess game",
+            "thumbnail": "img/chess_thumb.jpg",
             "size": 100,
             "color": "#cb6",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "3D modeling; blender",
+            "text": "this 3d scene was an exercise for university where we had to create a scene based on the theme 'my playroom'. since i was into chess that time i took the opportunity to model a set of chess pieces, a chess clock and set up this room where two people played a game of chess. one player got angry, hit the table and knocked over the chair as he stood up and left the room. [[img:img/chess_01.jpg]] experienced players could also recognize the 'immortal game' of 1851 which i set up on the board to give the scene even more depth. [[img:img/chess_02.jpg]]",
             "links": {
                 "link1": "4"
             },
