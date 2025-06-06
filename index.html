@@ -61,6 +61,7 @@
     }
     
     closeBtn.on('click', () => hideOverlay());
+
     overlay.on('click', (event) => {
       if (event.target.id === 'overlay') hideOverlay();
     });
@@ -148,6 +149,7 @@
             if (!isSelected) {
               d3.select(event.currentTarget).classed('selected', true);
               showOverlay(d);
+              unlockNodes(d);
             } else {
               hideOverlay();
             }
@@ -211,6 +213,43 @@
             .attr('y1', d => +d.source.y)
             .attr('x2', d => +d.target.x)
             .attr('y2', d => +d.target.y);
+        }
+
+        // Hide/Show Nodes and Links
+        linkSel
+          .classed('invisible', true);
+
+        nodeGroup
+          .classed('invisible', d => d.id != 1);
+
+        function unlockNodes(selectedNode) {
+          
+          const connectedNodeIds = new Set();
+          connectedNodeIds.add(selectedNode.id);
+
+          // Nur neue sichtbare Links markieren
+          linkSel
+            .filter(d => d.target.id === selectedNode.id)
+            .each(function(d) {
+              d3.select(this)
+                .classed('visible', true)
+                .classed('invisible', false);
+              connectedNodeIds.add(d.source.id);
+            });
+
+          // Alle anderen Links bleiben wie sie sind (nicht zurücksetzen!)
+
+          // Nur neue sichtbare Nodes markieren
+          nodeGroup
+            .filter(d => connectedNodeIds.has(d.id))
+            .each(function() {
+              const sel = d3.select(this);
+              if (!sel.classed('visible')) {
+                sel.classed('visible', true).classed('invisible', false);
+              }
+            });
+
+          // Alle anderen Nodes bleiben wie sie sind (nicht zurücksetzen!)
         }
 
         // Drag‐Callback ohne Simulation
