@@ -20,7 +20,7 @@
             "size": 120,
             "color": "#a33",
             "logline": "",
-            "text": "I began developing games in in elementary school, using pearler beads, a pair of dice and a world map. Growing up I spent a lot of time in programs like scratch to create various games and ended up studying computer science and game development.",
+            "text": "I began developing games in in elementary school, using pearler beads, a pair of dice and a world map. Growing up I spent a lot of time in programs like scratch to create various games and ended up studying computer science and game development. In this section I only showcase a selection of my game projects that highlight different skills and technologies I used. Check out my [[link:https://fernofai.itch.io/|itch.io page]] if you want to see and play more of my games.",
             "links": {
                 "link1": "1"
             },
@@ -55,8 +55,22 @@
             "xoffset": "-300",
             "yoffset": "300"
         },
-        {
+                {
             "id": "5",
+            "title": "Miscallaneous",
+            "thumbnail": "img/test.png",
+            "size": 120,
+            "color": "#36c",
+            "logline": "",
+            "text": "In here I want to showcase some of my other works that don't fit into the other categories. This (for now) includes film making, software and web development.",
+            "links": {
+                "link1": "1"
+            },
+            "xoffset": "-600",
+            "yoffset": "200"
+        },
+        {
+            "id": "6",
             "title": "Wild Trails",
             "thumbnail": "img/wildtrails_thumb.jpg",
             "size": 100,
@@ -70,7 +84,7 @@
             "yoffset": "500"
         },
         {
-            "id": "6",
+            "id": "7",
             "title": "Schule der Demokraten",
             "thumbnail": "img/diktatoren_thumb.jpg",
             "size": 100,
@@ -84,13 +98,13 @@
             "yoffset": "0"
         },
         {
-            "id": "7",
+            "id": "8",
             "title": "UniSurvive",
-            "thumbnail": "img/test.png",
+            "thumbnail": "img/unisurvive_thumb.jpg",
             "size": 100,
             "color": "#b55",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "2023; Board Game",
+            "text": "UniSurvive is a board game I developed together with another student friend for a university course (guess where the 'Uni' in the name comes from). The goal of the game is to survive a semester at university, which is not as easy as it sounds. You have to manage your time efficiently and learn for the final exams while not forgetting to manage your finances, care for your health and social life. [[img:img/unisurvive_02.jpg]] The game is played cooperatively by 2-4 players and communication and teamwork is greatly rewarded - or let's say: playing only for yourself is heavily punished. Only when all of you survive one semestre, you win the game and are judged by your final grades. [[img:img/unisurvive_03.jpg]] We were really fast with prototyping a first version of the game and thus were able to iterate a lot on the different mechanics and details. [[img:img/unisurvive_01.jpg]] As an extra challenge we were also given the limitation to fit the whole game into a predefined box size, which was quite a struggle. In the end we even printed a cross-section of how all the components would fit into the box, which made it actually fun and very satisfying to put everything back into the box after playing.",
             "links": {
                 "link1": "2"
             },
@@ -98,7 +112,7 @@
             "yoffset": "100"
         },
         {
-            "id": "8",
+            "id": "9",
             "title": "Bursting At The Seams",
             "thumbnail": "img/bats_thumb.jpg",
             "size": 100,
@@ -113,7 +127,7 @@
             "yoffset": "300"
         },
         {
-            "id": "9",
+            "id": "10",
             "title": "Black Box",
             "thumbnail": "img/blackbox_thumb.jpg",
             "size": 100,
@@ -127,65 +141,24 @@
             "yoffset": "400"
         },
         {
-            "id": "10",
-            "title": "tropical pizza",
-            "thumbnail": "img/test.png",
-            "size": 100,
-            "color": "#b55",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "links": {
-                "link1": "2"
-            },
-            "xoffset": "400",
-            "yoffset": "-50"
-        },
-        {
             "id": "11",
-            "title": "ariadne's nightmare",
-            "thumbnail": "img/test.png",
+            "title": "Ariadne's Nightmare",
+            "thumbnail": "img/ariadne_thumb.jpg",
             "size": 100,
             "color": "#b55",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "2020; Game Jam; Devlog; Unity; Pixel Art; Music",
+            "text": "[[link:https://ljpton.itch.io/ariadnes-nightmare|Ariadne's Nightmare]] is a game I developed for the United Game Jam 2020 as solo developer. Set in the Greek mythology, Ariadne and Theseus want to defeat the Minotaur, which is prisoned in an huge maze. For this purpose Ariadne is waiting at the entrance of the maze and is holding a long thread. The other end of the thread is carried by Theseus deep in the maze so he can always find his way out again. So far the theory. Unfortunately in this story the original plan went a bit wrong... [[img:img/ariadne_01.jpg]] Both Ariadne and Theseus get trapped in the labyrinth and have to call for each other repeatedly to find out in which direction they have to walk. I also implemented a puzzley-mechanic were both characters would be controlled the same, so one could only approach the other when they were blocked by some obstacle. The theme for the jam was 'Two' by the way. [[img:img/ariadne_02.jpg]] During the jam weekend I also recorded some video material and screencasts of the development process, which I edited together into a full development vlog spanning over 15 minutes. I wanted to show the whole process of developing a game from scratch, including the struggles and mistakes I made along the way. [[yt:https://www.youtube.com/embed/y2tWLr7tUQA]]",
             "links": {
                 "link1": "2",
                 "link2": "3",
-                "link3": "4"
+                "link3": "4",
+                "link4": "5"
             },
             "xoffset": "400",
             "yoffset": "700"
         },
         {
             "id": "12",
-            "title": "another",
-            "thumbnail": "img/test.png",
-            "size": 100,
-            "color": "#6b6",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "links": {
-                "link1": "3"
-            },
-            "xoffset": "50",
-            "yoffset": "-1000"
-        },
-        {
-            "id": "13",
-            "title": "wolke 7",
-            "thumbnail": "img/test.png",
-            "size": 100,
-            "color": "#6b6",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "links": {
-                "link1": "3"
-            },
-            "xoffset": "-200",
-            "yoffset": "-900"
-        },
-        {
-            "id": "14",
             "title": "Tsunami Run OST",
             "thumbnail": "img/tsunamirun_thumb.png",
             "size": 100,
@@ -193,14 +166,14 @@
             "logline": "",
             "text": "Tsunami Run was my first game project which I worked on together with three friends from school. It was a classic mobile endless runner game where the player had to run away from a tsunami wave through different biomes. The game was never finished, but I created a bunch of loopable music tracks for it, which I still like to listen to. For the different tracks I made sure they are in the same key and tempo, so they could be blended over each other seamlessly when the player reached a new biome. This first track is the main menu theme of the game, when the character is laying on the beach without a clue what is about to happen: [[audio:audio/tsunamirun_menu.mp3]] The second track is for the first beach biome, having a similar style like the menu theme, but with a more upbeat and adventurous feel: [[audio:audio/tsunamirun_beach.mp3]] The third track is for the second biome, which is a jungle. It has a more mysterious and dark atmosphere, which always reminds me of the volcano world in a Garfield Jump'n'Run I played on the Nintendo DS when I was younger: [[audio:audio/tsunamirun_jungle.mp3]] The fourth track takes the player to the planet Mars. The character hoped to be able to escape the tsunami by escaping Earth, but unfortunately the tsunami grew to an interplanetary size to follow the player to Mars - whoops! [[audio:audio/tsunamirun_mars.mp3]]",
             "links": {
-                "link1": "3",
-                "link2": "7"
+                "link1": "2",
+                "link2": "3"
             },
             "xoffset": "550",
             "yoffset": "-500"
         },
         {
-            "id": "15",
+            "id": "13",
             "title": "tropical pizza ost",
             "thumbnail": "img/test.png",
             "size": 100,
@@ -208,14 +181,14 @@
             "logline": "",
             "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "links": {
-                "link1": "3",
-                "link2": "10"
+                "link1": "2",
+                "link2": "3"
             },
             "xoffset": "350",
             "yoffset": "-250"
         },
         {
-            "id": "16",
+            "id": "14",
             "title": "terminus city",
             "thumbnail": "img/test.png",
             "size": 100,
@@ -229,7 +202,7 @@
             "yoffset": "-800"
         },
         {
-            "id": "17",
+            "id": "15",
             "title": "Lactoris",
             "thumbnail": "img/lactoris_thumb.jpg",
             "size": 100,
@@ -243,7 +216,7 @@
             "yoffset": "-700"
         },
         {
-            "id": "18",
+            "id": "16",
             "title": "revengeance",
             "thumbnail": "img/test.png",
             "size": 100,
@@ -257,7 +230,7 @@
             "yoffset": "-100"
         },
         {
-            "id": "19",
+            "id": "17",
             "title": "Hash Maps",
             "thumbnail": "img/hashmaps_thumb.jpg",
             "size": 100,
@@ -271,7 +244,7 @@
             "yoffset": "-200"
         },
         {
-            "id": "20",
+            "id": "18",
             "title": "Voxelcore",
             "thumbnail": "img/voxelcore_thumb.jpg",
             "size": 100,
@@ -285,21 +258,7 @@
             "yoffset": "-500"
         },
         {
-            "id": "21",
-            "title": "sexy killers",
-            "thumbnail": "img/test.png",
-            "size": 100,
-            "color": "#cb6",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "links": {
-                "link1": "4"
-            },
-            "xoffset": "-500",
-            "yoffset": "700"
-        },
-        {
-            "id": "22",
+            "id": "19",
             "title": "apple bowl",
             "thumbnail": "img/test.png",
             "size": 100,
@@ -313,21 +272,7 @@
             "yoffset": "800"
         },
         {
-            "id": "23",
-            "title": "heat",
-            "thumbnail": "img/test.png",
-            "size": 100,
-            "color": "#cb6",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "links": {
-                "link1": "4"
-            },
-            "xoffset": "-900",
-            "yoffset": "400"
-        },
-        {
-            "id": "24",
+            "id": "20",
             "title": "underworld monster",
             "thumbnail": "img/test.png",
             "size": 100,
@@ -341,7 +286,7 @@
             "yoffset": "200"
         },
         {
-            "id": "25",
+            "id": "21",
             "title": "Chess Game",
             "thumbnail": "img/chess_thumb.jpg",
             "size": 100,
@@ -355,7 +300,7 @@
             "yoffset": "1000"
         },
         {
-            "id": "26",
+            "id": "22",
             "title": "Sherlock Interpretation",
             "thumbnail": "img/sherlock_thumb.jpg",
             "size": 100,
@@ -367,6 +312,48 @@
             },
             "xoffset": "-100",
             "yoffset": "800"
+        },
+        {
+            "id": "23",
+            "title": "hausneun",
+            "thumbnail": "img/test.png",
+            "size": 100,
+            "color": "#5ae",
+            "logline": "",
+            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "links": {
+                "link1": "5"
+            },
+            "xoffset": "-600",
+            "yoffset": "200"
+        },
+        {
+            "id": "24",
+            "title": "Log Book",
+            "thumbnail": "img/test.png",
+            "size": 100,
+            "color": "#5ae",
+            "logline": "",
+            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "links": {
+                "link1": "5"
+            },
+            "xoffset": "-600",
+            "yoffset": "200"
+        },
+        {
+            "id": "25",
+            "title": "A Coded Day",
+            "thumbnail": "img/test.png",
+            "size": 100,
+            "color": "#5ae",
+            "logline": "",
+            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "links": {
+                "link1": "5"
+            },
+            "xoffset": "-600",
+            "yoffset": "200"
         }
     ]
 }
