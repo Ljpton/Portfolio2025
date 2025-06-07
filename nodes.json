@@ -16,7 +16,7 @@
         {
             "id": "2",
             "title": "Games",
-            "thumbnail": "img/test.png",
+            "thumbnail": "img/games_thumb.jpg",
             "size": 120,
             "color": "#a33",
             "logline": "",
@@ -44,7 +44,7 @@
         {
             "id": "4",
             "title": "Art & Storytelling",
-            "thumbnail": "img/test.png",
+            "thumbnail": "img/art_thumb.jpg",
             "size": 120,
             "color": "#b94",
             "logline": "",
@@ -85,7 +85,7 @@
         },
         {
             "id": "7",
-            "title": "perdition",
+            "title": "UniSurvive",
             "thumbnail": "img/test.png",
             "size": 100,
             "color": "#b55",
