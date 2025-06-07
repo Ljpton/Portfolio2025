@@ -6,8 +6,8 @@
             "thumbnail": "img/profile_picture.jpg",
             "size": 150,
             "color": "#2a9",
-            "logline": "gamedev; musician; artist",
-            "text": "hi, name's leon. i am 24 years old and currently finishing my game development master. i love being creative and developing and implementing unique ideas, whether it's a game, music or anything else. studying media & computer science before, i have learned a bunch of skills surrounding the conception and production of digital media. [[img:img/me.jpg]] i invite you to have a look at this mindmap that shows a selection of my works in different fields. if you like it the classic way, you can also see my [[link:#resumee|resumee and cv here]]. if you think i could be a fit for your project or just wanna chat, feel free to contact me via the links in the bottom left corner.",
+            "logline": "Game Dev; Musician; Artist",
+            "text": "Hi, my name is Leon. I'm 24 years old and currently finishing my game development master. I love being creative and developing and implementing unique ideas, whether it's a game, music or anything else. Studying Media & Computer Science before, I have learned a bunch of skills surrounding the conception and production of digital media. [[img:img/me.jpg]] I invite you to have a look at this mindmap that shows a selection of my works in different fields. However, if you like it the classic way, you can also see my [[link:#resumee|resumee and cv here]]. If you think I could be a fit for your project or just wanna chat, feel free to contact me via the links in the bottom left corner.",
             "links": {
             },
             "xoffset": "0",
@@ -15,12 +15,12 @@
         },
         {
             "id": "2",
-            "title": "games",
+            "title": "Games",
             "thumbnail": "img/test.png",
             "size": 120,
             "color": "#a33",
             "logline": "",
-            "text": "i began developing games in in elementary school, using pearler beads, a pair of dice and a world map. growing up i spent a lot of time in programs like scratch to create various games and ended up studying computer science and game development.",
+            "text": "I began developing games in in elementary school, using pearler beads, a pair of dice and a world map. Growing up I spent a lot of time in programs like scratch to create various games and ended up studying computer science and game development.",
             "links": {
                 "link1": "1"
             },
@@ -29,12 +29,12 @@
         },
         {
             "id": "3",
-            "title": "music",
+            "title": "Music",
             "thumbnail": "img/test.png",
             "size": 120,
             "color": "#4a4",
             "logline": "",
-            "text": "coming from a musical family, i have been surrounded by music my whole life. i started playing the piano at age 6, sang in choirs and learned the drums, which i play until today. i've also started playing the guitar and bass guitar to be able to write more diverse music. i'm a big fan of progressive music using odd time signatures and complex harmonies.",
+            "text": "Coming from a musical family, I have been surrounded by music my whole life. I started playing the piano at the age of 6, sang in choirs and learned the drums, which i play in different bands and orchestras until today. I've also started playing the guitar and bass guitar to be able to write more diverse music. I'm a big fan of progressive music using odd time signatures and complex harmonies.",
             "links": {
                 "link1": "1"
             },
@@ -43,12 +43,12 @@
         },
         {
             "id": "4",
-            "title": "art & storytelling",
+            "title": "Art & Storytelling",
             "thumbnail": "img/test.png",
             "size": 120,
             "color": "#b94",
             "logline": "",
-            "text": "i always liked to draw and make up stories. additionally i have a (sometimes annoyingly perfectionist) aesthetic sense which i could apply in many of my projects. however, only after taking courses in applied art and visual storytelling during my studies i really started to dig into storytelling and especially graphic novels and comics.",
+            "text": "I always liked to draw and make up stories. Additionally I have a (sometimes annoyingly perfectionist) aesthetic sense which I could apply in many of my projects. However, only after taking courses in applied art and visual storytelling during my studies I really started to dig into storytelling and especially graphic novels and comics.",
             "links": {
                 "link1": "1"
             },
@@ -57,12 +57,12 @@
         },
         {
             "id": "5",
-            "title": "wild trails",
-            "thumbnail": "img/test.png",
+            "title": "Wild Trails",
+            "thumbnail": "img/wildtrails_thumb.jpg",
             "size": 100,
             "color": "#b55",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "2024; Open World Driving Game; Unreal Engine 5",
+            "text": "Wild Trails is an open-world driving game that takes players into a vast, graphically stunning world with various biomes. Drive a versatile vehicle to explore the environment, perform spectacular stunts, and collect valuable upgrades. The game features a dynamic weather system, day-night cycle, and a variety of challenges to keep players engaged. With its focus on exploration and adventure, Wild Trails offers an immersive driving experience that encourages players to discover the beauty of the world around them. [[video:img/wildtrails_trailer.mp4]] Wild Trails was a project we worked on over the course of one semestre with a team of 3 people. I was responsible for the Programming and UI Design, while my teammates created the 3D Models and Textures as well as the Sound Design. [[img:img/wildtrails_01.jpg]] [[img:img/wildtrails_02.jpg]] [[img:img/wildtrails_03.jpg]] Our goal was to use the technologies of Unreal Engine 5 to create a huge open world that was both visually stunning and performant. We also had much fun putting together a trailer for the game, that's very much inspired by the first trailer for GTA VI.",
             "links": {
                 "link1": "2"
             },
@@ -71,12 +71,12 @@
         },
         {
             "id": "6",
-            "title": "schule der diktatoren",
+            "title": "Schule der Demokraten",
             "thumbnail": "img/test.png",
             "size": 100,
             "color": "#b55",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "2024; Mobile; Theater Project; Unity",
+            "text": "In late 2024 a student friend and I were given the opportunity to develop a small mobile game to be presented alongside the play 'Schule der Diktatoren' (School of Dictators) by Erich Kästner at the Ballhaus Prinzenallee theater in Berlin. We were given a lot of freedom in the conception of the game, but it should have a serious game aspect where students could learn about how democracy works and what's important for it. So we decided to create a small experience where players would take the role of a dictator who has to make decisions that would either lead to a dictatorship or a democracy. Each decision has consequences for different parameters like economy, military but also human rights and freedom of speech. We tried to balance the decisions in a way that would naturally lead players to democratic decisions because autocratic decisions would gain only short-term benefits but would lead to long-term disadvantages and eventually to a revolution. In the same way, we wanted to showcase how difficult it is to maintain a democracy. The closer players got to a democracy and thus the good ending of the game, the harder they were punished for breaking the rules of democracy, even if it gained them a lot of highly needed benefits in other areas. Fittingly we called the game 'Schule der Demokraten' (School of Democrats) as opposed to the original title of the play.",
             "links": {
                 "link1": "2"
             },
@@ -99,12 +99,12 @@
         },
         {
             "id": "8",
-            "title": "bursting at the seams",
+            "title": "Bursting At The Seams",
             "thumbnail": "img/bats_thumb.jpg",
             "size": 100,
             "color": "#b55",
-            "logline": "GGJ'25 entry; narrative exploration game; unity",
-            "text": "Explore the home of a hermit, who is obsessed with popping and piercing things. Investigate on their leftovers, live through their memories and put all the pieces together to uncover a horrible tragedy. [[yt:https://www.youtube.com/embed/5p9M8_Z1B3U]] i developed [[link:https://fernofai.itch.io/bursting-at-the-seams|bursting at the seams]] as a solo project for the global game jam 2025 within 48 hours. i initially wanted to make a narrative-driven game with a dark atmosphere, which was quite a struggle given the theme 'bubbles'. but i am very happy with the twisted obsession i made up of a person who has the urge to pierce or pop everything they can. through harmless things like the mandatory soap bubbles and balloons i told the story through the eyes of the hermit, turning darker and darker when they can't stop punching holes in a letter from a friend and eventually locking up named friend by barricading the door. [[img:img/bats_02.jpg]] i only wanted to let the players see the (quite foreseeable) ending when they found every other piece of the story first, so they could figure it out for themselves first. accidentally by this i created something very similar to what i was currently researching in my master thesis: games where you can only progress by understanding the story. with more time i would have implemented a mechanic that would require the players not only to find all clues but also put them in the correct chronological order - which would prove a much more comprehensive understanding of the story - before allowing them to see what the hermit has hidden under the trapdoor right in the middle of his hut.",
+            "logline": "GGJ'25 entry; Narrative Exploration Game; Unity",
+            "text": "Explore the home of a hermit, who is obsessed with popping and piercing things. Investigate on their leftovers, live through their memories and put all the pieces together to uncover a horrible tragedy. [[yt:https://www.youtube.com/embed/5p9M8_Z1B3U]] I developed [[link:https://fernofai.itch.io/bursting-at-the-seams|Bursting At The Seams]] as a solo project for the Global Game Jam 2025 within 48 hours. I initially wanted to make a narrative-driven game with a dark atmosphere, which was quite a struggle given the theme 'Bubbles'. But I am very happy with the twisted obsession I made up of a person who has the urge to pierce or pop everything they can. Through harmless things like the mandatory soap bubbles and balloons I told the story through the eyes of the hermit, turning darker and darker when they can't stop punching holes in a letter from a friend and eventually locking up named friend by barricading the door. [[img:img/bats_02.jpg]] I only wanted to let the players see the (quite foreseeable) ending when they found every other piece of the story first, so they could figure it out for themselves first. Accidentally by this I created something very similar to what I was currently researching in my master thesis: games where you can only progress by understanding the story. With more time I would have implemented a mechanic that would require the players not only to find all clues but also put them in the correct chronological order - which would prove a much more comprehensive understanding of the story - before allowing them to see what the hermit has hidden under the trapdoor right in the middle of his hut.",
             "links": {
                 "link1": "2",
                 "link2": "4"
@@ -114,12 +114,12 @@
         },
         {
             "id": "9",
-            "title": "black box",
-            "thumbnail": "img/test.png",
+            "title": "Black Box",
+            "thumbnail": "img/blackbox_thumb.jpg",
             "size": 100,
             "color": "#b55",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "2024; Mobile Game; Unity",
+            "text": "Black Box is the first real release of my game development career. It's idea came from so called 'matchbox labyrinths' my father liked to build. He would take a matchbox, cut a hole in the top and put a tiny marble inside. Then he would build a labyrinth inside the box, so the marble could only get out of the in one way. The sensation of hearing and feeling where the marble might be rolling was so fascinating to me that I wanted to recreate it as a digital game. [[img:img/blackbox_01.png]] So I developed Black Box as a mobile game for Android where you can tilt your phone just like the matchbox to roll a marble through a labyrinth. You can play the game without looking at the screen and even without sound, just by feeling the vibrations of the phone. But you can also turn on an easy mode, where you see the whole labyrinth when your marble got lost. I also went through the whole process of testing and publishing the game on the Google Play Store, where you can [[link:https://play.google.com/store/apps/details?id=com.Fernofai.BlackBox|download and play]] it for free.",
             "links": {
                 "link1": "2"
             },
@@ -230,12 +230,12 @@
         },
         {
             "id": "17",
-            "title": "lactoris",
-            "thumbnail": "img/test.png",
+            "title": "Lactoris",
+            "thumbnail": "img/lactoris_thumb.jpg",
             "size": 100,
             "color": "#6b6",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "2024; Hardcore; Cubase",
+            "text": "Lactoris sum, mei generis sola. Nemo ad me venit, vivo desolata. Manebo hic aeternum - vel moriar. Lactoris sum, mei generis sola. Olim toto orbe eram domi. Legatum ingens fuit olim meum, nunc tamen secreto latere cogor. Vix mille manent in insula desertum. Nemo venit, quia nihil possideo. Nulla spes superest, nullaque dona fero. Me ferre nemo vult in locum novum. [[audio:audio/lactoris.mp3]] Lactoris is a Hardcore track that I made while I was still new playing the guitar. The lyrics tell the (true) story of a flower that only grows on a small island in the middle of the ocean. It once grew all over the world, but now it is only found on this island and since it's not very attractive for animals or humans, it is left alone and will slowly die out. Quite a sad story, and too well applicable to our own lifes sometimes. Since the track is quite heavy I imagine the vocals to be very aggressive and harsh, but I don't have the vocal skills to pull that off yet.",
             "links": {
                 "link1": "3"
             },
@@ -258,12 +258,12 @@
         },
         {
             "id": "19",
-            "title": "hash maps",
+            "title": "Hash Maps",
             "thumbnail": "img/hashmaps_thumb.jpg",
             "size": 100,
             "color": "#6b6",
-            "logline": "synth wave; sound design; cubase",
-            "text": "[[yt:https://www.youtube.com/embed/oGMvWmV4Jsg]] hash maps is a synth wave track i made within about 5 hours. it's based of a hilarious voice message i received from a friend nerding about hash maps and how they are the best data structure ever.",
+            "logline": "Synth Wave; Sound Design; Cubase",
+            "text": "[[yt:https://www.youtube.com/embed/oGMvWmV4Jsg]] Hash Maps is a Synth Wave track i made within about 5 hours. it's based of a hilarious voice message i received from a friend nerding about hash maps and how they are the best data structure ever.",
             "links": {
                 "link1": "3"
             },
@@ -342,12 +342,12 @@
         },
         {
             "id": "25",
-            "title": "chess game",
+            "title": "Chess Game",
             "thumbnail": "img/chess_thumb.jpg",
             "size": 100,
             "color": "#cb6",
-            "logline": "3D modeling; blender",
-            "text": "this 3d scene was an exercise for university where we had to create a scene based on the theme 'my playroom'. since i was into chess that time i took the opportunity to model a set of chess pieces, a chess clock and set up this room where two people played a game of chess. one player got angry, hit the table and knocked over the chair as he stood up and left the room. [[img:img/chess_01.jpg]] experienced players could also recognize the 'immortal game' of 1851 which i set up on the board to give the scene even more depth. [[img:img/chess_02.jpg]]",
+            "logline": "3D Modeling; Blender",
+            "text": "This 3D scene was an exercise for university where we had to create a scene based on the theme 'My Playroom'. Since I was into Chess that time I took the opportunity to model a set of Chess pieces, a Chess clock and set up this room where two people played a game of Chess. One player got angry, hit the table and knocked over the chair as he stood up and left the room. [[img:img/chess_01.jpg]] Experienced players could also recognize the 'Immortal Game' of 1851 which I set up on the board to give the scene even more depth. [[img:img/chess_02.jpg]]",
             "links": {
                 "link1": "4"
             },
@@ -356,12 +356,12 @@
         },
         {
             "id": "26",
-            "title": "sherlock interpretation",
-            "thumbnail": "img/test.png",
+            "title": "Sherlock Interpretation",
+            "thumbnail": "img/sherlock_thumb.jpg",
             "size": 100,
             "color": "#cb6",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "Storytelling; Character Design; Comic; CLIP Studio Paint; Blender",
+            "text": "For a university course we were given the exercise to reinterpret the Sherlock Holmes and John Watson characters. For that I not only reimagined them as antropomorph figures, thinking of Sherlock as the loner cat being smart, sometimes grumpy or even malicious and only interested in the mystery itself, while John had to be a caring and empathetic dog. [[gif:img/sherlock.gif]] I also put them in a small comic story for which I blocked out Sherlocks office and drew over the characters for a short scene that should give a good impression of the characters and their behaviors. Unfortunately the comic is in german, but I tried to work out the expressions and personalities of the characters as visual as possible.",
             "links": {
                 "link1": "4"
             },

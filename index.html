@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mindmap portfolio</title>
+  <title>Leon's Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -23,14 +23,14 @@
   </div>
   <div id="footer">
     <div>
-      <div style="width: 115px;">Leon's portfolio</div>
+      <div style="width: 115px;">Leon's Portfolio</div>
       <div id="social-media">
         <a href="https://github.com/Ljpton"><img src="img/github_logo.png" alt="github"></a>
         <a href="https://bsky.app/profile/fernofai.bsky.social"><img src="img/bluesky_logo.png" alt="bluesky"></a>
         <a href="https://www.linkedin.com/in/leon-unger-6a4137269/"><img src="img/linkedin_logo.png" alt="linkedin"></a>
       </div>
     </div>
-    <a href="legal.html">legal notice</a>
+    <a href="legal.html">Legal Notice</a>
   </div>
 
   <!-- D3.js laden -->
@@ -53,7 +53,11 @@
       .replace(/\[\[gif:(.*?)\]\]/g, '<div class="inline-content-container"><img class="inline-content" src="$1" alt="GIF"/></div>')
       // YouTube-Videos (Einbettung per iframe)
       .replace(/\[\[yt:(.*?)\]\]/g, '<div class="inline-content-container"><iframe class="inline-video" src="$1" frameborder="0" allowfullscreen></iframe></div>')
-      
+      // Lokales Video
+      .replace(/\[\[video:(.*?)\]\]/g, '<div class="inline-content-container"><video class="inline-content" controls><source src="$1" type="video/mp4">Your browser does not support the video tag.</video></div>')
+      // Lokales Audio
+      .replace(/\[\[audio:(.*?)\]\]/g, '<div class="inline-content-container"><audio class="inline-content" controls><source src="$1" type="audio/mpeg">Your browser does not support the audio element.</audio></div>')
+
       .replace(/\[\[link:(.*?)(?:\|(.*?))?\]\]/g, (match, url, text) => {
         const linkText = text || url;
         return `<a href="${url}" class="inline-link" target="_blank" rel="noopener noreferrer">${linkText}</a>`;
