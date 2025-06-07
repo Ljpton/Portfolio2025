@@ -72,11 +72,11 @@
         {
             "id": "6",
             "title": "Schule der Demokraten",
-            "thumbnail": "img/test.png",
+            "thumbnail": "img/diktatoren_thumb.jpg",
             "size": 100,
             "color": "#b55",
             "logline": "2024; Mobile; Theater Project; Unity",
-            "text": "In late 2024 a student friend and I were given the opportunity to develop a small mobile game to be presented alongside the play 'Schule der Diktatoren' (School of Dictators) by Erich Kästner at the Ballhaus Prinzenallee theater in Berlin. We were given a lot of freedom in the conception of the game, but it should have a serious game aspect where students could learn about how democracy works and what's important for it. So we decided to create a small experience where players would take the role of a dictator who has to make decisions that would either lead to a dictatorship or a democracy. Each decision has consequences for different parameters like economy, military but also human rights and freedom of speech. We tried to balance the decisions in a way that would naturally lead players to democratic decisions because autocratic decisions would gain only short-term benefits but would lead to long-term disadvantages and eventually to a revolution. In the same way, we wanted to showcase how difficult it is to maintain a democracy. The closer players got to a democracy and thus the good ending of the game, the harder they were punished for breaking the rules of democracy, even if it gained them a lot of highly needed benefits in other areas. Fittingly we called the game 'Schule der Demokraten' (School of Democrats) as opposed to the original title of the play.",
+            "text": "In late 2024 a student friend and I were given the opportunity to develop a small mobile game to be presented alongside the play 'Schule der Diktatoren' (School of Dictators) by Erich Kästner at the [[link:https://ballhausprinzenallee.de/|Ballhaus Prinzenallee]] theater in Berlin. I would take the programming and game design part while [[link:https://junior17.itch.io/|Jannick Jade Elfers]] would create all the graphics and characteres for the game. We were given a lot of freedom in the conception of the game, but it should have a serious game aspect where students could learn about how democracy works and what's important for it. [[img:img/diktatoren_01.jpg]] So we decided to create a small experience where players would take the role of a dictator who has to make decisions that would either lead to a dictatorship or a democracy. Each decision has consequences for different parameters like economy, military but also human rights and freedom of speech. We tried to balance the decisions in a way that would naturally lead players to democratic decisions because autocratic decisions would gain only short-term benefits but would lead to long-term disadvantages and eventually to a revolution. [[img:img/diktatoren_02.jpg]] [[img:img/diktatoren_03.jpg]] In the same way, we wanted to showcase how difficult it is to maintain a democracy. The closer players got to a democracy and thus the good ending of the game, the harder they were punished for breaking the rules of democracy, even if it gained them a lot of highly needed benefits in other areas. Fittingly we called the game [[link:https://fernofai.itch.io/schule-der-demokraten|Schule der Demokraten]] (School of Democrats) as opposed to the original title of the play.",
             "links": {
                 "link1": "2"
             },
@@ -103,7 +103,7 @@
             "thumbnail": "img/bats_thumb.jpg",
             "size": 100,
             "color": "#b55",
-            "logline": "GGJ'25 entry; Narrative Exploration Game; Unity",
+            "logline": "2025; Game Jam; Narrative Exploration Game; Unity",
             "text": "Explore the home of a hermit, who is obsessed with popping and piercing things. Investigate on their leftovers, live through their memories and put all the pieces together to uncover a horrible tragedy. [[yt:https://www.youtube.com/embed/5p9M8_Z1B3U]] I developed [[link:https://fernofai.itch.io/bursting-at-the-seams|Bursting At The Seams]] as a solo project for the Global Game Jam 2025 within 48 hours. I initially wanted to make a narrative-driven game with a dark atmosphere, which was quite a struggle given the theme 'Bubbles'. But I am very happy with the twisted obsession I made up of a person who has the urge to pierce or pop everything they can. Through harmless things like the mandatory soap bubbles and balloons I told the story through the eyes of the hermit, turning darker and darker when they can't stop punching holes in a letter from a friend and eventually locking up named friend by barricading the door. [[img:img/bats_02.jpg]] I only wanted to let the players see the (quite foreseeable) ending when they found every other piece of the story first, so they could figure it out for themselves first. Accidentally by this I created something very similar to what I was currently researching in my master thesis: games where you can only progress by understanding the story. With more time I would have implemented a mechanic that would require the players not only to find all clues but also put them in the correct chronological order - which would prove a much more comprehensive understanding of the story - before allowing them to see what the hermit has hidden under the trapdoor right in the middle of his hut.",
             "links": {
                 "link1": "2",
@@ -186,12 +186,12 @@
         },
         {
             "id": "14",
-            "title": "tsunami run ost",
-            "thumbnail": "img/test.png",
+            "title": "Tsunami Run OST",
+            "thumbnail": "img/tsunamirun_thumb.png",
             "size": 100,
             "color": "#6b6",
             "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "text": "Tsunami Run was my first game project which I worked on together with three friends from school. It was a classic mobile endless runner game where the player had to run away from a tsunami wave through different biomes. The game was never finished, but I created a bunch of loopable music tracks for it, which I still like to listen to. For the different tracks I made sure they are in the same key and tempo, so they could be blended over each other seamlessly when the player reached a new biome. This first track is the main menu theme of the game, when the character is laying on the beach without a clue what is about to happen: [[audio:audio/tsunamirun_menu.mp3]] The second track is for the first beach biome, having a similar style like the menu theme, but with a more upbeat and adventurous feel: [[audio:audio/tsunamirun_beach.mp3]] The third track is for the second biome, which is a jungle. It has a more mysterious and dark atmosphere, which always reminds me of the volcano world in a Garfield Jump'n'Run I played on the Nintendo DS when I was younger: [[audio:audio/tsunamirun_jungle.mp3]] The fourth track takes the player to the planet Mars. The character hoped to be able to escape the tsunami by escaping Earth, but unfortunately the tsunami grew to an interplanetary size to follow the player to Mars - whoops! [[audio:audio/tsunamirun_mars.mp3]]",
             "links": {
                 "link1": "3",
                 "link2": "7"
@@ -262,7 +262,7 @@
             "thumbnail": "img/hashmaps_thumb.jpg",
             "size": 100,
             "color": "#6b6",
-            "logline": "Synth Wave; Sound Design; Cubase",
+            "logline": "2024; Synth Wave; Sound Design; Cubase",
             "text": "[[yt:https://www.youtube.com/embed/oGMvWmV4Jsg]] Hash Maps is a Synth Wave track i made within about 5 hours. it's based of a hilarious voice message i received from a friend nerding about hash maps and how they are the best data structure ever.",
             "links": {
                 "link1": "3"
@@ -272,12 +272,12 @@
         },
         {
             "id": "20",
-            "title": "voxelcore",
-            "thumbnail": "img/test.png",
+            "title": "Voxelcore",
+            "thumbnail": "img/voxelcore_thumb.jpg",
             "size": 100,
             "color": "#6b6",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "2024; Bass; Sound Design; Cubase",
+            "text": "[[audio:audio/voxelcore.mp3]] It's hard to describe the genre of Voxelcore, but it was the combination of a very fun bass sound I came up with while practising using a Bitcrusher plugin in Cubase, and a Breakcore-style drum beat in 6/8 time.",
             "links": {
                 "link1": "3"
             },
