@@ -58,7 +58,7 @@
                 {
             "id": "5",
             "title": "Miscallaneous",
-            "thumbnail": "img/test.png",
+            "thumbnail": "img/miscallaneous_thumb.jpg",
             "size": 120,
             "color": "#36c",
             "logline": "",
@@ -174,27 +174,12 @@
         },
         {
             "id": "13",
-            "title": "tropical pizza ost",
-            "thumbnail": "img/test.png",
+            "title": "Terminus City",
+            "thumbnail": "img/terminus_thumb.jpg",
             "size": 100,
             "color": "#6b6",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "links": {
-                "link1": "2",
-                "link2": "3"
-            },
-            "xoffset": "350",
-            "yoffset": "-250"
-        },
-        {
-            "id": "14",
-            "title": "terminus city",
-            "thumbnail": "img/test.png",
-            "size": 100,
-            "color": "#6b6",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "2024; Synth Wave; Cyberpunk; Cubase",
+            "text": "Terminus City was originally just another fun Synth Wave track I was working on, when friends started a game narrative driving game project where you took the role of a taxi driver in a dystopian cyberpunk city. Since they had no music yet, I finished the track and gave it to them to use in their game. [[audio:audio/terminus.mp3]] Since the game was only a vertical slice, the track is the only one playing and it may be in parts a bit too fiddly to be used as background music. However, I could imagine it being part of a selection of tracks that would be played on an ingame radio, similar to GTA or Cyberpunk 2077.",
             "links": {
                 "link1": "3"
             },
@@ -202,7 +187,7 @@
             "yoffset": "500"
         },
         {
-            "id": "15",
+            "id": "14",
             "title": "Lactoris",
             "thumbnail": "img/lactoris_thumb.jpg",
             "size": 100,
@@ -216,13 +201,13 @@
             "yoffset": "0"
         },
         {
-            "id": "16",
-            "title": "revengeance",
-            "thumbnail": "img/test.png",
+            "id": "15",
+            "title": "Revengeance",
+            "thumbnail": "img/revengeance_thumb.jpg",
             "size": 100,
             "color": "#6b6",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "2024; Rock; Cubase",
+            "text": "[[audio:audio/revengeance.mp3]] Revengeance is a Rock track I made in Cubase. I wrote the instrumental part first and then came up with a melody that I thought would fit well. Writing lyrics onto that melody is still a challenge and I've not yet come to a satisfying result. So, for now a piano plays the melody instead of a singer. Fun Fact: The title is a reference to on of my favourite games, Metal Gear Rising: Revengeance, which also has a great Rock/Metal soundtrack.",
             "links": {
                 "link1": "3"
             },
@@ -230,7 +215,7 @@
             "yoffset": "100"
         },
         {
-            "id": "17",
+            "id": "16",
             "title": "Hash Maps",
             "thumbnail": "img/hashmaps_thumb.jpg",
             "size": 100,
@@ -244,7 +229,7 @@
             "yoffset": "300"
         },
         {
-            "id": "18",
+            "id": "17",
             "title": "Voxelcore",
             "thumbnail": "img/voxelcore_thumb.jpg",
             "size": 100,
@@ -258,7 +243,7 @@
             "yoffset": "400"
         },
         {
-            "id": "19",
+            "id": "18",
             "title": "apple bowl",
             "thumbnail": "img/test.png",
             "size": 100,
@@ -272,7 +257,7 @@
             "yoffset": "800"
         },
         {
-            "id": "20",
+            "id": "19",
             "title": "underworld monster",
             "thumbnail": "img/test.png",
             "size": 100,
@@ -286,7 +271,7 @@
             "yoffset": "400"
         },
         {
-            "id": "21",
+            "id": "20",
             "title": "Chess Game",
             "thumbnail": "img/chess_thumb.jpg",
             "size": 100,
@@ -300,7 +285,7 @@
             "yoffset": "1000"
         },
         {
-            "id": "22",
+            "id": "21",
             "title": "Sherlock Interpretation",
             "thumbnail": "img/sherlock_thumb.jpg",
             "size": 100,
@@ -314,7 +299,7 @@
             "yoffset": "800"
         },
         {
-            "id": "23",
+            "id": "22",
             "title": "hausneun",
             "thumbnail": "img/test.png",
             "size": 100,
@@ -328,7 +313,7 @@
             "yoffset": "0"
         },
         {
-            "id": "24",
+            "id": "23",
             "title": "Log Book",
             "thumbnail": "img/test.png",
             "size": 100,
@@ -342,13 +327,13 @@
             "yoffset": "500"
         },
         {
-            "id": "25",
+            "id": "24",
             "title": "A Coded Day",
-            "thumbnail": "img/test.png",
+            "thumbnail": "img/acodedday_thumb.jpg",
             "size": 100,
             "color": "#5ae",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "2023; Short Film; Experimental",
+            "text": "A Coded Day is an experimental short film we created as a team of 5 for a university course. The film is about 5 characters that are characterized by different colors. They live through the same routines every day when one day the alarm clock of Green is locked away in a birds cage. The characters know that this is an anomaly and there will be more anomalies this day that may present them the code to open the lock and turn the alarm clock off. [[yt:https://www.youtube.com/embed/wO4zPPNC0gg]] The film then goes through the day of the characters while repeatedly switching the viewpoint between them. Thus the same day is shown five times, but the characters may talk about a number they found, before the perspective of the character who found the number is shown. In the end four numbers where found and the viewer is invited to puzzle out the right order in which they have to be put together to open the lock. [[img:img/acodedday_02.jpg]] As I was the one who came up with that twisted idea, my main responsibility was working out the script and figuring out what perspective could be shown in which order to get the best effect. [[img:img/acodedday_01.jpg]]",
             "links": {
                 "link1": "5"
             },
@@ -356,13 +341,13 @@
             "yoffset": "-200"
         },
         {
-            "id": "26",
+            "id": "25",
             "title": "CLICK",
-            "thumbnail": "img/test.png",
+            "thumbnail": "img/click_thumb.jpg",
             "size": 100,
             "color": "#5ae",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "2022; Short Film; Motion Capturing; DaVinci Resolve",
+            "text": "During my bachelor studies we were given the opportunity to create a short film using motion capturing. As a team of four we created CLICK, a short film about a girl that is trapped inside a prison cell and has to solve a puzzle cube to escape. She is so obsessed with it that she doesn't realizes that her obsession is the prison she built herself. [[yt:https://www.youtube.com/embed/riOqyel2Cz0]] The puzzle room is made up of a door that can only be opened by solving the puzzle cube. At the same time pressing buttons on the cube will activate different pillars coming out of the ground and the walls, that the girl has to dodge. We spent a lot of time creating a choreography that our motion capturing actor could perform and how we would add the pillars in the 3D scene. [[img:img/click_01.jpg]] My main role in this project storyboarding aswell as the post production consisting of editing the rendered footage in DaVinci Resolve and adding the sound design and music.",
             "links": {
                 "link1": "5"
             },
