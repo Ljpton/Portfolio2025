@@ -1,6 +1,6 @@
 * {
-    color:#fff;
-    font-family: monospace;
+    color:#f8f8f8;
+    font-family: monospace
 }
 
 html {
@@ -129,6 +129,10 @@ svg {
 .node.selected rect {
     stroke: #fff;
     stroke-width: 3px;
+}
+
+.node :hover {
+    cursor: pointer;
 }
 
 .inline-content {

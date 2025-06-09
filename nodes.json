@@ -244,12 +244,12 @@
         },
         {
             "id": "18",
-            "title": "apple bowl",
-            "thumbnail": "img/test.png",
+            "title": "Apple Bowl",
+            "thumbnail": "img/applebowl_thumb.jpg",
             "size": 100,
             "color": "#cb6",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "2020; 3D; Blender",
+            "text": "[[img:img/applebowl_01.jpg]] This project was one of my earlier practises in 3D modeling and one were I learned a lot of things about UV unwrapping, texturing and materials in general, as well as how to work with physics and cloth simulation within Blender. [[img:img/applebowl_02.jpg]]",
             "links": {
                 "link1": "4"
             },
@@ -258,12 +258,12 @@
         },
         {
             "id": "19",
-            "title": "underworld monster",
-            "thumbnail": "img/test.png",
+            "title": "Cybercops",
+            "thumbnail": "img/cybercops_thumb.jpg",
             "size": 100,
             "color": "#cb6",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "2025; Character Design; Storytelling; Comic; CLIP Studio Paint",
+            "text": "Cybercops or Underworld Monster is one of a bunch of short comic stories I sketched out in the last years and the first one I am aiming to finish. The story is set in a dystopian future where the skyscrapers are literally scraping the clouds and the city is split in the glittering white and luxurious Overworld and the dark, dirty and dangerous Underworld which consists of the lower floors and ground level. [[img:img/cybercops_01.jpg]] The story follows two young police officers who are sent to the Underworld to investigate on a monsterish creature that arose from it. Sooner or later they will find out that the creature is not the only thing that the monster is not the only thing awaiting them and the Overworld's ignorance of it may have been what started it all. [[video:img/cybercops_02.mp4]] Besides writing my master thesis I am currently working on the third of eight the pages of the comic. If you want to have a deeper look in the process and the characters of the story you can do so on [[link:https://www.patreon.com/c/Fernofai|Patreon]], which I created to motivate myself to work on the comic regularly as well as to share the process with others.",
             "links": {
                 "link1": "4"
             },
@@ -301,11 +301,11 @@
         {
             "id": "22",
             "title": "hausneun",
-            "thumbnail": "img/test.png",
+            "thumbnail": "img/hausneun_thumb.jpg",
             "size": 100,
             "color": "#5ae",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "2022; Web Development; Blender",
+            "text": "In the bachelor we there was one project that went over one year and was supposed to be a real-world project. In my group we were given the task to create a website that would help new students and visitors to find their way through the quite weirdly constructed building no. 9 where also our project name 'hausneun' comes from. The building is a former factory building that was transformed into a university building and thus has a lot of weird corners and rooms that are not easy to find. [[img:img/hausneun_01.jpg]] We modeled a 3D version of the whole building in Blender, which was mostly my responsibility additionally to the overall project management. Two of my teammates created the user interface and design of the website and another two were responsible to implement the website using HTML, CSS and JavaScript, aswell as the 3D model and controls of the interactive 3D map with Three.js. [[img:img/hausneun_02.jpg]] [[img:img/hausneun_03.jpg]] On the final site you can freely navigate through the 3D map aswell as a 2D version of the building, search for rooms or generate a route from one room to another. In the end we even implemented a feature that would show 360° panoramas of some of the rooms, so you could get a better impression of the room before going there.",
             "links": {
                 "link1": "5"
             },
@@ -315,11 +315,11 @@
         {
             "id": "23",
             "title": "Log Book",
-            "thumbnail": "img/test.png",
+            "thumbnail": "img/logbook_thumb.jpg",
             "size": 100,
             "color": "#5ae",
-            "logline": "",
-            "text": "lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "logline": "2024; Mobile App; Java; Android Studio",
+            "text": "[[img:img/logbook_01.jpg]] Log Book is a mobile app I developed for Android because I couldn't find another app that would fit my needs. I wanted to have a simple mindful journaling app which is more focused on capturing the moment than writing long texts and reviewing whole days or weeks. After releasing Black Box as my first Android app it was easier to release Log Book, but it was still interesting since I used Android Studio for the development rather than Unity. For the UI I created a simple mockup first which made it very easy to implement it later in Android Studio.",
             "links": {
                 "link1": "5"
             },
