@@ -66,6 +66,7 @@
     
     closeBtn.on('click', () => hideOverlay());
 
+    // Click on transparent Overlay-Background
     overlay.on('click', (event) => {
       if (event.target.id === 'overlay') hideOverlay();
     });
@@ -91,17 +92,19 @@
 
     // Klick auf Hintergrund -> Deselektieren
     svg.on('click', () => hideOverlay());
-    container.on('click', (event) => {
+    
+    /*container.on('click', (event) => {
       // Verhindern, dass Klicks auf Nodes hier landen (stopPropagation in Node-Handler)
       if (event.target.tagName === 'svg') {
         hideOverlay();
       }
-    });
+    });*/
 
     const zoom = d3.zoom()
       .scaleExtent([0.1, 10])
       .on('zoom', ({ transform }) => container.attr('transform', transform));
-    svg.call(zoom);
+    svg.call(zoom)
+      .on('dblclick.zoom', null); // Doppelklick-Zoom deaktivieren
     
     // Daten aus JSON laden
     fetch('nodes.json')
