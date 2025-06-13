@@ -78,9 +78,10 @@
       overlay.style('display', 'block');
       contentEl.style('border-color', d.color);
     }
+
     function hideOverlay() {
       overlay.style('display', 'none');
-      // Auswahl zurücksetzen
+      // Reset Selection
       container.selectAll('.node').classed('selected', false);
     }
 
@@ -90,23 +91,16 @@
           
     const container = svg.append('g');
 
-    // Klick auf Hintergrund -> Deselektieren
+    // Click on Background -> Deselect
     svg.on('click', () => hideOverlay());
-    
-    /*container.on('click', (event) => {
-      // Verhindern, dass Klicks auf Nodes hier landen (stopPropagation in Node-Handler)
-      if (event.target.tagName === 'svg') {
-        hideOverlay();
-      }
-    });*/
 
     const zoom = d3.zoom()
       .scaleExtent([0.1, 10])
       .on('zoom', ({ transform }) => container.attr('transform', transform));
     svg.call(zoom)
-      .on('dblclick.zoom', null); // Doppelklick-Zoom deaktivieren
+      .on('dblclick.zoom', null); // Deactivate Double-Click Zoom
     
-    // Daten aus JSON laden
+    // Load Data from JSON
     fetch('nodes.json')
       .then(response => response.json())
       .then(data => {
@@ -118,20 +112,20 @@
           });
         });
 
-        // Map von id→Node-Objekt
+        // Map from id -> Node-Object
         const nodeById = new Map(nodes.map(d => [d.id.toString(), d]));
         const linksResolved = links.map(l => ({
           source: nodeById.get(l.source),
           target: nodeById.get(l.target)
         }));
 
-        // Anfangspositionen: nutzen xoffset/yoffset oder Mitte
+        // Set Start Positions for Nodes
         nodes.forEach(d => {
           d.x = window.innerWidth / 2 + ((d.xoffset !== undefined) ? +d.xoffset : 0);
           d.y = window.innerHeight / 2 + ((d.yoffset !== undefined) ? +d.yoffset : 0);
         });
 
-        // Links zeichnen
+        // Draw Links
         const linkSel = container.append('g')
           .attr('class', 'links')
           .selectAll('line')
@@ -141,9 +135,8 @@
           .attr('stroke', '#999')
           .attr('stroke-width', 1.2);
 
-        // Nodes zeichnen
+        // Draw Nodes
         const nodeGroup = container.append('g')
-          .attr('class', 'nodes')
           .selectAll('g')
           .data(nodes)
           .enter().append('g')
@@ -160,20 +153,13 @@
             } else {
               hideOverlay();
             }
-          })
-          .call(d3.drag()
-            .on('start', dragstarted)
-            .on('drag', dragged)
-            .on('end', dragended)
-          );
+          });
 
-        // Größe und Layout basierend auf size-Attribut
+        // Calculate Node Size and Layout based on size-Attribute
         const padding = 4;
         const titleHeight = 32;
         const thumbSize = d => +d.size;
-        // Gesamtbreite = Thumbnail plus seitlicher Padding
         const nodeWidth = d => thumbSize(d) + padding * 2;
-        // Gesamthöhe = Titelbereich + Thumbnail + oberer/unterer Padding
         const nodeHeight = d => titleHeight + thumbSize(d) + padding * 2;
 
         nodeGroup.append('rect')
@@ -208,7 +194,7 @@
           .attr('width', d => thumbSize(d))
           .attr('height', d => thumbSize(d));
 
-        // Links einmalig initial setzen
+        // Set Links initially
         updateLinks();
 
         linkSel
@@ -229,12 +215,12 @@
         nodeGroup
           .classed('invisible', d => d.id != 1);
 
+        // Make Nodes visible based on selected Node
         function unlockNodes(selectedNode) {
           
           const connectedNodeIds = new Set();
           connectedNodeIds.add(selectedNode.id);
 
-          // Nur neue sichtbare Links markieren
           linkSel
             .filter(d => d.target.id === selectedNode.id)
             .each(function(d) {
@@ -244,9 +230,7 @@
               connectedNodeIds.add(d.source.id);
             });
 
-          // Alle anderen Links bleiben wie sie sind (nicht zurücksetzen!)
-
-          // Nur neue sichtbare Nodes markieren
+          // Only mark new selected Nodes
           nodeGroup
             .filter(d => connectedNodeIds.has(d.id))
             .each(function() {
@@ -255,25 +239,8 @@
                 sel.classed('visible', true).classed('invisible', false);
               }
             });
-
-          // Alle anderen Nodes bleiben wie sie sind (nicht zurücksetzen!)
         }
 
-        // Drag‐Callback ohne Simulation
-        function dragstarted(event, d) {
-          d3.select(this).raise();
-        }
-
-        function dragged(event, d) {
-          d.x = +event.x;
-          d.y = +event.y;
-          d3.select(this).attr('transform', `translate(${d.x},${d.y})`);
-          updateLinks();
-        }
-
-        function dragended(event, d) { }
-
-        // Resize: Canvas anpassen, Links neu zeichnen
         window.addEventListener('resize', () => {
           svg.attr('width', window.innerWidth).attr('height', window.innerHeight);
           updateLinks();
