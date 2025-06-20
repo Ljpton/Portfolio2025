@@ -99,7 +99,8 @@ svg {
 }
 
 #overlay .content {
-    background: #222;
+    background: #222222dd;
+    backdrop-filter: blur(10px);
     box-sizing: border-box;
     margin: 20px;
     width: calc(100% - 40px);
