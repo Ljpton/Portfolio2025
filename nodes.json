@@ -7,7 +7,7 @@
             "size": 150,
             "color": "#2a9",
             "logline": "Game Dev; Musician; Artist",
-            "text": "Hi, my name is Leon. I'm 24 years old and currently finishing my game development master. I love being creative and developing and implementing unique ideas, whether it's a game, music or anything else. Studying Media & Computer Science before, I have learned a bunch of skills surrounding the conception and production of digital media. [[img:img/me.jpg]] I invite you to have a look at this mindmap that shows a selection of my works in different fields. However, if you like it the classic way, you can also see my [[link:https://docs.google.com/document/d/1B3rtOlm3gIjoXDZNJTV8Jj4ggQUiR_iJG26gKvzp5Ow/edit?usp=sharing|cv here]]. If you think I could be a fit for your project or just wanna chat, feel free to contact me via the links in the bottom left corner.",
+            "text": "Hi, my name is Leon. I'm 25 years old and currently finishing my game development master. I love being creative and developing and implementing unique ideas, whether it's a game, music or anything else. Studying Media & Computer Science before, I have learned a bunch of skills surrounding the conception and production of digital media. [[img:img/me.jpg]] I invite you to have a look at this mindmap that shows a selection of my works in different fields. However, if you like it the classic way, you can also see my [[link:https://docs.google.com/document/d/1B3rtOlm3gIjoXDZNJTV8Jj4ggQUiR_iJG26gKvzp5Ow/edit?usp=sharing|cv here]]. If you think I could be a fit for your project or just wanna chat, feel free to contact me via the links in the bottom left corner.",
             "links": {
             },
             "xoffset": "0",
@@ -133,7 +133,7 @@
             "size": 100,
             "color": "#b55",
             "logline": "2024; Mobile Game; Unity",
-            "text": "Black Box is the first real release of my game development career. It's idea came from so called 'matchbox labyrinths' my father liked to build. He would take a matchbox, cut a hole in the top and put a tiny marble inside. Then he would build a labyrinth inside the box, so the marble could only get out of the in one way. The sensation of hearing and feeling where the marble might be rolling was so fascinating to me that I wanted to recreate it as a digital game. [[img:img/blackbox_01.png]] So I developed Black Box as a mobile game for Android where you can tilt your phone just like the matchbox to roll a marble through a labyrinth. You can play the game without looking at the screen and even without sound, just by feeling the vibrations of the phone. But you can also turn on an easy mode, where you see the whole labyrinth when your marble got lost. I also went through the whole process of testing and publishing the game on the Google Play Store, where you can [[link:https://play.google.com/store/apps/details?id=com.Fernofai.BlackBox|download and play]] it for free.",
+            "text": "Black Box is the first real release of my game development career. It's idea came from so called 'matchbox labyrinths' my father liked to build. He would take a matchbox, cut a hole in the top and put a tiny marble inside. Then he would build a labyrinth inside the box, so the marble could only get out of the box in one way. The sensation of hearing and feeling where the marble might be rolling was so fascinating to me that I wanted to recreate it as a digital game. [[img:img/blackbox_01.png]] So I developed Black Box as a mobile game for Android where you can tilt your phone just like the matchbox to roll a marble through a labyrinth. You can play the game without looking at the screen and even without sound, just by feeling the vibrations of the phone. But you can also turn on an easy mode, where you see the whole labyrinth when your marble got lost. I also went through the whole process of testing and publishing the game on the Google Play Store, where you can [[link:https://play.google.com/store/apps/details?id=com.Fernofai.BlackBox|download and play]] it for free.",
             "links": {
                 "link1": "2"
             },
@@ -202,12 +202,12 @@
         },
         {
             "id": "15",
-            "title": "Revengeance",
-            "thumbnail": "img/revengeance_thumb.jpg",
+            "title": "SOLVALE",
+            "thumbnail": "img/solvale_01.png",
             "size": 100,
             "color": "#6b6",
-            "logline": "2024; Rock; Cubase",
-            "text": "[[audio:audio/revengeance.mp3]] Revengeance is a Rock track I made in Cubase. I wrote the instrumental part first and then came up with a melody that I thought would fit well. Writing lyrics onto that melody is still a challenge and I've not yet come to a satisfying result. So, for now a piano plays the melody instead of a singer. Fun Fact: The title is a reference to on of my favourite games, Metal Gear Rising: Revengeance, which also has a great Rock/Metal soundtrack.",
+            "logline": "2025; Rock; Songwriting; Cubase",
+            "text": "[[audio:audio/standdown_instrumental.mp3]] SOLVALE is the name of a rock songwriting project I startet in 2025. I had so much music just lying around that I decided to start something with it. That was also the time when I decided to finally dip into shortform video content. As of now I've about 10 demo tracks ready that only need proper vocals, mixing and mastering.",
             "links": {
                 "link1": "3"
             },
