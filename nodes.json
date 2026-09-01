@@ -5,9 +5,9 @@
             "title": "Leon Unger",
             "thumbnail": "img/profile_picture.jpg",
             "size": 150,
-            "color": "#2a9",
+            "color": "#36c",
             "logline": "Game Dev; Musician; Artist",
-            "text": "Hi, my name is Leon. I'm 25 years old and working on media, game and software projects. I love being creative and developing and implementing unique ideas, whether it's a game, music or anything else. Studying Media & Computer Science before, I have learned a bunch of skills surrounding the conception and production of digital media. [[img:img/me.jpg]] I invite you to have a look at this mindmap that shows a selection of my works in different fields. However, if you like it the classic way, you can also see my [[link:https://docs.google.com/document/d/1B3rtOlm3gIjoXDZNJTV8Jj4ggQUiR_iJG26gKvzp5Ow/edit?usp=sharing|cv here]]. If you think I could be a fit for your project or just wanna chat, feel free to contact me via the links in the bottom left corner.",
+            "text": "Hi, my name is Leon. I'm 25 years old and working on media, game and software projects. I love being creative and developing and implementing unique ideas, whether it's a game, music or anything else. Studying Media & Computer Science before, I have learned a bunch of skills surrounding the conception and production of digital media. I invite you to have a look at this mindmap that shows a selection of my works in different fields. However, if you like it the classic way, you can also see my [[link:https://docs.google.com/document/d/1B3rtOlm3gIjoXDZNJTV8Jj4ggQUiR_iJG26gKvzp5Ow/edit?usp=sharing|cv here]]. If you think I could be a fit for your project or just wanna chat, feel free to contact me via the links in the bottom left corner.",
             "links": {
             },
             "xoffset": "0",
@@ -34,7 +34,7 @@
             "size": 120,
             "color": "#4a4",
             "logline": "",
-            "text": "Coming from a musical family, I have been surrounded by music my whole life. I started playing the piano at the age of 6, sang in choirs and learned the drums, which i play in different bands and orchestras until today. I've also started playing the guitar and bass guitar to be able to write more diverse music. I'm a big fan of progressive music using odd time signatures and complex harmonies.",
+            "text": "Coming from a musical family, I have been surrounded by music my whole life. I started playing the piano at the age of 6, sang in choirs and learned the drums, which I play in different bands and orchestras until today. I've also started playing the guitar and bass guitar to be able to write more diverse music. I'm a big fan of progressive music using odd time signatures and complex harmonies.",
             "links": {
                 "link1": "1"
             },
@@ -43,31 +43,17 @@
         },
         {
             "id": "4",
-            "title": "Art & Storytelling",
+            "title": "Misc",
             "thumbnail": "img/art_thumb.jpg",
             "size": 120,
             "color": "#b94",
             "logline": "",
-            "text": "I always liked to draw and make up stories and I have a (sometimes annoyingly perfectionist) aesthetic sense which I already could apply in many of my projects. However, only after taking courses in applied art and visual storytelling during my studies I really started to dig into storytelling and especially graphic novels and comics.",
+            "text": "In here I want to showcase some of my other works that don't fit into the other categories. That includes web and app development as well as drawing and storytelling.",
             "links": {
                 "link1": "1"
             },
             "xoffset": "-300",
             "yoffset": "300"
-        },
-                {
-            "id": "5",
-            "title": "Miscellaneous",
-            "thumbnail": "img/miscallaneous_thumb.jpg",
-            "size": 120,
-            "color": "#36c",
-            "logline": "",
-            "text": "In here I want to showcase some of my other works that don't fit into the other categories. This (for now) includes film making, software and web development.",
-            "links": {
-                "link1": "1"
-            },
-            "xoffset": "-600",
-            "yoffset": "200"
         },
         {
             "id": "6",
@@ -108,8 +94,8 @@
             "links": {
                 "link1": "2"
             },
-            "xoffset": "-200",
-            "yoffset": "-100"
+            "xoffset": "350",
+            "yoffset": "-250"
         },
         {
             "id": "9",
@@ -151,8 +137,7 @@
             "links": {
                 "link1": "2",
                 "link2": "3",
-                "link3": "4",
-                "link4": "5"
+                "link3": "4"
             },
             "xoffset": "0",
             "yoffset": "-800"
@@ -187,27 +172,13 @@
             "yoffset": "500"
         },
         {
-            "id": "14",
-            "title": "Lactoris",
-            "thumbnail": "img/lactoris_thumb.jpg",
-            "size": 100,
-            "color": "#6b6",
-            "logline": "2024; Hardcore; Cubase",
-            "text": "Lactoris sum, mei generis sola. Nemo ad me venit, vivo desolata. Manebo hic aeternum - vel moriar. Lactoris sum, mei generis sola. Olim toto orbe eram domi. Legatum ingens fuit olim meum, nunc tamen secreto latere cogor. Vix mille manent in insula desertum. Nemo venit, quia nihil possideo. Nulla spes superest, nullaque dona fero. Me ferre nemo vult in locum novum. [[audio:audio/lactoris.mp3]] Lactoris is a Hardcore track that I made while I was still new playing the guitar. The lyrics tell the (true) story of a flower that only grows on a small island in the middle of the ocean. It once grew all over the world, but now it is only found on this island and since it's not very attractive for animals or humans, it is left alone and will slowly die out. Quite a sad story, and too well applicable to our own lifes sometimes. Since the track is quite heavy I imagine the vocals to be very aggressive and harsh, but I don't have the vocal skills to pull that off yet.",
-            "links": {
-                "link1": "3"
-            },
-            "xoffset": "600",
-            "yoffset": "0"
-        },
-        {
             "id": "15",
             "title": "SOLVALE",
-            "thumbnail": "img/solvale_01.png",
+            "thumbnail": "img/solvale_01.jpg",
             "size": 100,
             "color": "#6b6",
             "logline": "2025; Rock; Songwriting; Cubase",
-            "text": "[[audio:audio/standdown_instrumental.mp3]] SOLVALE is the name of a rock songwriting project I startet in 2025. I had so much music just lying around that I decided to start something with it. That was also the time when I decided to finally dip into shortform video content. As of now I've about 10 demo tracks ready that only need proper vocals, mixing and mastering.",
+            "text": "[[audio:audio/mindbowling_inst.mp3]] [[audio:audio/sate_inst.mp3]] [[audio:audio/enoughofme_inst.mp3]] SOLVALE is the name of a rock songwriting project I startet in 2025. I had so much music just lying around that I decided to start something with it. That was also the time when I decided to finally dip into shortform video content. As of now I've about 10 demo tracks ready that only need proper vocals, mixing and mastering.",
             "links": {
                 "link1": "3"
             },
@@ -221,7 +192,7 @@
             "size": 100,
             "color": "#6b6",
             "logline": "2024; Synth Wave; Sound Design; Cubase",
-            "text": "[[yt:https://www.youtube.com/embed/oGMvWmV4Jsg]] Hash Maps is a Synth Wave track i made within about 5 hours. it's based of a hilarious voice message i received from a friend nerding about hash maps and how they are the best data structure ever.",
+            "text": "[[yt:https://www.youtube.com/embed/oGMvWmV4Jsg]] Hash Maps is a Synth Wave track I made within about 5 hours. It's based of a hilarious voice message I received from a friend nerding about hash maps and how they are the best data structure ever.",
             "links": {
                 "link1": "3"
             },
@@ -243,46 +214,18 @@
             "yoffset": "400"
         },
         {
-            "id": "18",
-            "title": "Apple Bowl",
-            "thumbnail": "img/applebowl_thumb.jpg",
-            "size": 100,
-            "color": "#cb6",
-            "logline": "2020; 3D; Blender",
-            "text": "[[img:img/applebowl_01.jpg]] This project was one of my earlier practises in 3D modeling and one were I learned a lot of things about UV unwrapping, texturing and materials in general, as well as how to work with physics and cloth simulation within Blender. [[img:img/applebowl_02.jpg]]",
-            "links": {
-                "link1": "4"
-            },
-            "xoffset": "-800",
-            "yoffset": "800"
-        },
-        {
             "id": "19",
-            "title": "Cybercops",
+            "title": "Above & Below",
             "thumbnail": "img/cybercops_thumb.jpg",
             "size": 100,
             "color": "#cb6",
             "logline": "2025; Character Design; Storytelling; Comic; CLIP Studio Paint",
-            "text": "Cybercops or 'Above & Below' is one of a bunch of short comic stories I sketched out in the last years and the first one I finished. You can read the full comic [[link:/comic.html|here]]. The story is set in a dystopian future where the skyscrapers are literally scraping the clouds and the city is split in the glittering white and luxurious Overworld and the dark, dirty and dangerous Underworld which consists of the lower floors and ground level. [[img:img/cybercops_01.jpg]] The story follows two young police officers who are sent to the Underworld to investigate on a monsterish creature that arose from it. Sooner or later they will find out that the creature is not the only thing that the monster is not the only thing awaiting them and the Overworld's ignorance of it may have been what started it all. [[video:img/cybercops_02.mp4]] Besides writing my master thesis I am currently working on the third of eight the pages of the comic. If you want to have a deeper look in the process and the characters of the story you can do so on [[link:https://www.patreon.com/c/Fernofai|Patreon]], which I created to motivate myself to work on the comic regularly as well as to share the process with others.",
+            "text": "Above & Below is one of a bunch of short comic stories I sketched out in the last years and the first one I finished. You can read the full comic [[link:/comic.html|here]]. The story is set in a dystopian future where the skyscrapers are literally scraping the clouds and the city is split in the glittering white and luxurious Overworld and the dark, dirty and dangerous Underworld which consists of the lower floors and ground level. [[img:img/cybercops_01.jpg]] The story follows two young police officers who are sent to the Underworld to investigate on a monsterish creature that arose from it. Sooner or later they will find out that the creature is not the only thing that the monster is not the only thing awaiting them and the Overworld's ignorance of it may have been what started it all. [[video:img/cybercops_02.mp4]] Besides writing my master thesis I am currently working on the third of eight the pages of the comic. If you want to have a deeper look in the process and the characters of the story you can do so on [[link:https://www.patreon.com/c/Fernofai|Patreon]], which I created to motivate myself to work on the comic regularly as well as to share the process with others.",
             "links": {
                 "link1": "4"
             },
-            "xoffset": "-700",
-            "yoffset": "400"
-        },
-        {
-            "id": "20",
-            "title": "Chess Game",
-            "thumbnail": "img/chess_thumb.jpg",
-            "size": 100,
-            "color": "#cb6",
-            "logline": "3D Modeling; Blender",
-            "text": "This 3D scene was an exercise for university where we had to create a scene based on the theme 'My Playroom'. Since I was into Chess that time I took the opportunity to model a set of Chess pieces, a Chess clock and set up this room where two people played a game of Chess. One player got angry, hit the table and knocked over the chair as he stood up and left the room. [[img:img/chess_01.jpg]] Experienced players could also recognize the 'Immortal Game' of 1851 which I set up on the board to give the scene even more depth. [[img:img/chess_02.jpg]]",
-            "links": {
-                "link1": "4"
-            },
-            "xoffset": "-300",
-            "yoffset": "1000"
+            "xoffset": "-400",
+            "yoffset": "600"
         },
         {
             "id": "21",
@@ -303,56 +246,28 @@
             "title": "hausneun",
             "thumbnail": "img/hausneun_thumb.jpg",
             "size": 100,
-            "color": "#5ae",
+            "color": "#cb6",
             "logline": "2022; Web Development; Blender",
             "text": "In the bachelor we had one project that took one year and was supposed to be a real-world project. In my group we were given the task to create a website that would help new students and visitors to find their way through the quite weirdly constructed building no. 9 where also our project name 'hausneun' comes from. The building is a former factory building that was transformed into a university building and thus has a lot of weird corners and rooms that are not easy to find. [[img:img/hausneun_01.jpg]] We modeled a 3D version of the whole building in Blender, which was mostly my responsibility additionally to the overall project management. Two of my teammates created the user interface and design of the website and another two were responsible to implement the website using HTML, CSS and JavaScript, aswell as the 3D model and controls of the interactive 3D map with Three.js. [[img:img/hausneun_04.png]] [[img:img/hausneun_03.jpg]] On the final site you can freely navigate through the 3D map aswell as a 2D version of the building, search for rooms or generate a route from one room to another. In the end we even implemented a feature that would show 360° panoramas of some of the rooms, so you could get a better impression of the room before going there.",
             "links": {
-                "link1": "5"
+                "link1": "4"
             },
-            "xoffset": "-1100",
-            "yoffset": "0"
+            "xoffset": "-700",
+            "yoffset": "100"
         },
         {
             "id": "23",
             "title": "Log Book",
             "thumbnail": "img/logbook_thumb.jpg",
             "size": 100,
-            "color": "#5ae",
+            "color": "#cb6",
             "logline": "2024; Mobile App; Java; Android Studio",
             "text": "[[img:img/logbook_01.jpg]] Log Book is a mobile app I developed for Android because I couldn't find another app that would fit my needs. I wanted to have a simple mindful journaling app which is more focused on capturing the moment than writing long texts and reviewing whole days or weeks. After releasing Black Box as my first Android app it was easier to release [[link:https://play.google.com/store/apps/details?id=com.fernofai.logbook|Log Book]], but it was still interesting since I used Android Studio for the development rather than Unity. For the UI I created a simple mockup first which made it very easy to implement it later in Android Studio.",
             "links": {
-                "link1": "5"
+                "link1": "4"
             },
-            "xoffset": "-1050",
-            "yoffset": "500"
-        },
-        {
-            "id": "24",
-            "title": "A Coded Day",
-            "thumbnail": "img/acodedday_thumb.jpg",
-            "size": 100,
-            "color": "#5ae",
-            "logline": "2023; Short Film; Experimental",
-            "text": "A Coded Day is an experimental short film we created as a team of 5 for a university course. The film is about 5 characters that are characterized by different colors. They live through the same routines every day when one day the alarm clock of Green is locked away in a birds cage. The characters know that this is an anomaly and there will be more anomalies this day that may present them the code to open the lock and turn the alarm clock off. [[yt:https://www.youtube.com/embed/wO4zPPNC0gg]] The film then goes through the day of the characters while repeatedly switching the viewpoint between them. Thus the same day is shown five times, but the characters may talk about a number they found, before the perspective of the character who found the number is shown. In the end four numbers where found and the viewer is invited to puzzle out the right order in which they have to be put together to open the lock. [[img:img/acodedday_02.jpg]] As I was the one who came up with that twisted idea, my main responsibility was working out the script and figuring out what perspective could be shown in which order to get the best effect. [[img:img/acodedday_01.jpg]]",
-            "links": {
-                "link1": "5"
-            },
-            "xoffset": "-800",
-            "yoffset": "-200"
-        },
-        {
-            "id": "25",
-            "title": "CLICK",
-            "thumbnail": "img/click_thumb.jpg",
-            "size": 100,
-            "color": "#5ae",
-            "logline": "2022; Short Film; Motion Capturing; DaVinci Resolve",
-            "text": "During my bachelor studies we were given the opportunity to create a short film using motion capturing. As a team of four we created CLICK, a short film about a girl that is trapped inside a prison cell and has to solve a puzzle cube to escape. She is so obsessed with it that she doesn't realizes that her obsession is the prison she built herself. [[yt:https://www.youtube.com/embed/riOqyel2Cz0]] The puzzle room is made up of a door that can only be opened by solving the puzzle cube. At the same time pressing buttons on the cube will activate different pillars coming out of the ground and the walls, that the girl has to dodge. We spent a lot of time creating a choreography that our motion capturing actor could perform and how we would add the pillars in the 3D scene. [[img:img/click_01.jpg]] My main role in this project storyboarding aswell as the post production consisting of editing the rendered footage in DaVinci Resolve and adding the sound design and music.",
-            "links": {
-                "link1": "5"
-            },
-            "xoffset": "-950",
-            "yoffset": "250"
+            "xoffset": "-750",
+            "yoffset": "350"
         }
     ]
 }
